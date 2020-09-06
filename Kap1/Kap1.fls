@@ -1,0 +1,6 @@
+PWD /Users/rodri/Documents/Universidad/Tesis/documento/thesis_template/Kap1
+INPUT /usr/local/texlive/2018/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT Kap1.tex
+OUTPUT Kap1.log

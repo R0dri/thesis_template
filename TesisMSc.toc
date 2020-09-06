@@ -1,0 +1,59 @@
+\contentsline {chapter}{\numberline {1}Marco Referencial}{1}% 
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{1}% 
+\contentsline {section}{\numberline {1.2}Planteamiento del Problema}{2}% 
+\contentsline {subsection}{\numberline {1.2.1}Definici\IeC {\'o}n del problema}{2}% 
+\contentsline {section}{\numberline {1.3}Objetivos}{2}% 
+\contentsline {subsection}{\numberline {1.3.1}Objetivo General}{2}% 
+\contentsline {subsection}{\numberline {1.3.2}Objetivos espec\IeC {\'\i }ficos}{2}% 
+\contentsline {section}{\numberline {1.4}Justificaci\IeC {\'o}n}{3}% 
+\contentsline {section}{\numberline {1.5}L\IeC {\'\i }mites y Alcances}{3}% 
+\contentsline {subsection}{\numberline {1.5.1}L\IeC {\'\i }mites}{3}% 
+\contentsline {subsection}{\numberline {1.5.2}Alcances}{3}% 
+\contentsline {chapter}{\numberline {2}Marco Referencial}{4}% 
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{4}% 
+\contentsline {section}{\numberline {2.2}Planteamiento del Problema}{5}% 
+\contentsline {subsection}{\numberline {2.2.1}Definici\'on del problema}{5}% 
+\contentsline {section}{\numberline {2.3}Objetivos}{5}% 
+\contentsline {subsection}{\numberline {2.3.1}Objetivo General}{5}% 
+\contentsline {subsection}{\numberline {2.3.2}Objetivos espec\'ificos}{5}% 
+\contentsline {section}{\numberline {2.4}Justificaci\'on}{6}% 
+\contentsline {section}{\numberline {2.5}L\'imites y Alcances}{6}% 
+\contentsline {subsection}{\numberline {2.5.1}L\'imites}{6}% 
+\contentsline {subsection}{\numberline {2.5.2}Alcances}{6}% 
+\contentsline {chapter}{\numberline {3}Marco Te\'orico}{7}% 
+\contentsline {section}{\numberline {3.1}Estado del Arte}{7}% 
+\contentsline {subsection}{\numberline {3.1.1}Enfoque 1}{8}% 
+\contentsline {subsection}{\numberline {3.1.2}Enfoque 2}{8}% 
+\contentsline {subsection}{\numberline {3.1.3}Enfoque n}{8}% 
+\contentsline {subsection}{\numberline {3.1.4}Discusi\'on}{8}% 
+\contentsline {section}{\numberline {3.2}Fundamentos Te\'oricos}{9}% 
+\contentsline {subsection}{\numberline {3.2.1}T\'ecnica/concepto/Algoritmo 1}{9}% 
+\contentsline {subsection}{\numberline {3.2.2}T\'ecnica/concepto/Algoritmo 2}{10}% 
+\contentsline {subsection}{\numberline {3.2.3}T\'ecnica/concepto/Algoritmo 3}{10}% 
+\contentsline {subsection}{\numberline {3.2.4}T\'ecnica/concepto/Algoritmo n}{10}% 
+\contentsline {chapter}{\numberline {4}Marco Pr\'actico}{11}% 
+\contentsline {section}{\numberline {4.1}Esquema general del proyecto}{11}% 
+\contentsline {section}{\numberline {4.2}Etapa 1}{12}% 
+\contentsline {subsection}{\numberline {4.2.1}Requerimientos}{12}% 
+\contentsline {subsection}{\numberline {4.2.2}C\'alculos/dimensionamiento}{12}% 
+\contentsline {subsection}{\numberline {4.2.3}Desarrollo }{12}% 
+\contentsline {section}{\numberline {4.3}Etapa 2}{12}% 
+\contentsline {subsection}{\numberline {4.3.1}Requerimientos}{12}% 
+\contentsline {subsection}{\numberline {4.3.2}C\'alculos/dimensionamiento}{12}% 
+\contentsline {subsection}{\numberline {4.3.3}Desarrollo }{12}% 
+\contentsline {section}{\numberline {4.4}Etapa 3}{14}% 
+\contentsline {subsection}{\numberline {4.4.1}Requerimientos}{14}% 
+\contentsline {subsection}{\numberline {4.4.2}C\'alculos/dimensionamiento}{14}% 
+\contentsline {subsection}{\numberline {4.4.3}Desarrollo }{14}% 
+\contentsline {section}{\numberline {4.5}Herramientas}{14}% 
+\contentsline {subsection}{\numberline {4.5.1}Hardware}{14}% 
+\contentsline {subsection}{\numberline {4.5.2}Software}{14}% 
+\contentsline {section}{\numberline {4.6}Resultados y discusi\'on}{14}% 
+\contentsline {chapter}{\numberline {5}Marco Conclusivo}{15}% 
+\contentsline {section}{\numberline {5.1}Conclusiones}{15}% 
+\contentsline {section}{\numberline {5.2}Recomendaciones}{15}% 
+\contentsline {section}{\numberline {5.3}Trabajo Futuro}{15}% 
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliograf\'{\i }a}{16}% 
+\contentsline {chapter}{\numberline {A}Anexo: Nombrar el anexo A de acuerdo con su contenido}{18}% 
+\contentsline {chapter}{\numberline {B}Anexo: Nombrar el anexo B de acuerdo con su contenido}{19}% 
+\contentsline {chapter}{\numberline {C}Anexo: Nombrar el anexo C de acuerdo con su contenido}{20}% 

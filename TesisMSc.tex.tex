@@ -1,0 +1,78 @@
+% Created 2020-09-06 Sun 13:53
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{rodri}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={rodri},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.3.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\input{EncabezadoTesisMSc}
+\%\includeonly{Kap1/Kap1,Kap2/Kap2}
+\usepackage{titlesec} 
+\renewcommand{\tablename}\{\textbf{Tabla}\}
+\renewcommand{\figurename}\{\textbf{Figura}\}
+\renewcommand{\listtablename}{Lista de Tablas}
+\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\labelitemi}{$\bullet$}
+\titleformat{\chapter}[display]
+\{\bfseries\Large\}
+\{\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter\}
+\{1ex\}
+\{\titlerule\vspace{1ex}\filleft\}
+[\vspace{1ex}\titlerule]
+
+
+\begin{document}
+
+	
+\pagenumbering{roman}
+\include{HojaTitulo/HojaTituloMSc}
+
+\renewcommand{\contentsname}{\textbf{\LARGE \'Indice}}
+
+\include{Tab_Simbolos/TabSimbolosMSc}
+%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+
+
+\tableofcontents
+\listoffigures
+
+\listoftables
+%\include{Resumen}%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\newpage
+\pagenumbering{arabic}
+% \include{Kap1/Kap}
+\include{Kap1/Kap1}
+\include{Kap2/Kap2}
+\include{Kap3/Kap3}
+\include{Kap4/Kap4}
+\addcontentsline{toc}{chapter}{\numberline{}Bibliograf\'{\i}a}
+\bibliographystyle{plaindin_esp}
+\bibliography{BibliMSc}
+\bibliography{mendeleybib}
+\include{Anexos/Anexos}
+
+\end{document}
+\end{document}
