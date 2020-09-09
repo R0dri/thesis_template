@@ -18,19 +18,19 @@
 
 	
 \pagenumbering{roman}
-\include{HojaTitulo/HojaTituloMSc}
+%\include{HojaTitulo/HojaTituloMSc}
 
-\renewcommand{\contentsname}{\textbf{\LARGE \'Indice}}
+%\renewcommand{\contentsname}{\textbf{\LARGE \'Indice}}
 
-\include{Tab_Simbolos/TabSimbolosMSc}
-%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+%\include{Tab_Simbolos/TabSimbolosMSc}
+%%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 
 
-\tableofcontents
-\listoffigures
+%\tableofcontents
+%\listoffigures
 
-\listoftables
-%\include{Resumen}%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+%\listoftables
+%%%%%%\include{Resumen}%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
 \newpage
 \pagenumbering{arabic}
 \include{Kap1/Kap}
@@ -40,7 +40,8 @@
 \include{Kap4/Kap4}
 \addcontentsline{toc}{chapter}{\numberline{}Bibliograf\'{\i}a}
 \bibliographystyle{plaindin_esp}
-\bibliography{BibliMSc}
+%%%%% REMOVE DEFAULT BIBLIOGRAPHY
+%\bibliography{BibliMSc}
 \bibliography{mendeleybib}
 \include{Anexos/Anexos}
 
