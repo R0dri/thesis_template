@@ -1,74 +1,520 @@
-\chapter{Marco Te\'orico}
-Los cap\'{\i}tulos son las principales divisiones del documento. En estos, se desarrolla el tema del documento. Cada cap\'{\i}tulo debe corresponder a uno de los temas o aspectos tratados en el documento y por tanto debe llevar un t\'{\i}tulo que indique el contenido del cap\'{\i}tulo.\\
+% Created 2020-09-07 Mon 18:00
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{rodri}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={rodri},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.3.7)}, 
+ pdflang={English}}
+\begin{document}
 
-Los t\'{\i}tulos de los cap\'{\i}tulos deben ser concertados entre el alumno y el director de la tesis  o trabajo de investigaci\'{o}n, teniendo en cuenta los lineamientos que cada unidad acad\'{e}mica brinda. As\'{\i} por ejemplo, en algunas facultades se especifica que cada cap\'{\i}tulo debe corresponder a un art\'{\i}culo cient\'{\i}fico, de tal manera que se pueda publicar posteriormente en una revista.\\
+\tableofcontents
+
+\chapter{Marco Teórico}
 
 \section{Estado del Arte}
-Es evidenete que esta secci\'on trata de una extensa revisi\'on bibliogr\'afica, por lo que se deber\'a referenciar una cantidad importante de papers. 
+\label{sec:org12bf65c}
+\texttt{La electroencefalografía (EEG) es un estudio que se basa en la interpretación de los impulsos eléctricos producidos por las neuronas.}
 
-Existen varias normas para la citaci\'{o}n bibliogr\'{a}fica. Algunas \'{a}reas del conocimiento prefieren normas espec\'{\i}ficas para citar las referencias bibliogr\'{a}ficas en el texto y escribir la lista de bibliograf\'{\i}a al final de los documentos. Esta plantilla brinda la libertad para que el autor de la tesis  o trabajo de investigaci\'{o}n utilice la norma bibliogr\'{a}fica com\'{u}n para su disciplina. Sin embargo, se solicita que la norma seleccionada se utilice con rigurosidad, sin olvidar referenciar "todos" los elementos tomados de otras fuentes (referencias bibliogr\'{a}ficas, patentes consultadas, software empleado en el manuscrito, en el tratamiento a los datos y resultados del trabajo, consultas a personas (expertos o p\'{u}blico general), entre otros).\\
+\texttt{, que se utiliza para detectar anomalías en los patrones de ondas producidas por el cerebro.}
 
-Existen algunos ejemplos para la citaci\'{o}n bibliogr\'{a}fica, por ejemplo, Microsoft Word (versiones posteriores al 2006), en el  men\'{u} de referencias, se cuenta con la opci\'{o}n de insertar citas bibliogr\'{a}ficas utilizando la norma APA (American Psychological Association) u otras normas y con la ayuda para construir autom\'{a}ticamente la lista al final del documento. De la misma manera, existen administradores bibliogr\'{a}ficos compatibles con Microsoft Word como Zotero, End Note y el Reference Manager,  disponibles a trav\'{e}s del Sistema Nacional de Bibliotecas (SINAB) de la Universidad Nacional de Colombia\footnote{Ver:www.sinab.unal.edu.co } secci\'{o}n "Recursos bibliogr\'{a}ficos" opci\'{o}n "Herramientas Bibliogr\'{a}ficas. A continuaci\'{o}n se muestra un ejemplo de una de las formas m\'{a}s usadas para las citaciones bibliogr\'{a}ficas.\\
+\texttt{Esta práctica tiene una larga trayectoria con un alza reciente en el interés por crear interfaces que permitan conectar actividades cerebrales con entradas a un computador denominadas BCI por sus siglas en inglés ‘Brain-Computer Interface’. Hoy en dia hablamos de un gran alza en BCI proyectando alcanzar \$1.46 billones de dolares en el mercado para el 2020 [1].}
 
-Citaci\'{o}n individual:\cite{AG01}.\\
-Citaci\'{o}n simult\'{a}nea de varios autores:
-\cite{AG12,AG52,AG70,AG08a,AG09a,AG36a,AG01i}.\\
+Motivados por esto, los fabricantes de circuitos integrados han logrado captar las necesidades del mercado proveyendo alternativas que logran simplificar el proceso, mejorando el rendimiento y reduciendo el costo global. Así mismo, podemos decir que se ha roto la barrera de acceso a estos dispositivos en el mercado comercial gracias a la evolución de la tecnología, permitiendo desarrollar dispositivos de mucha complejidad con costos muy bajos, nunca antes visto en esta industria.
 
-Por lo general, las referencias bibliogr\'{a}ficas correspondientes a los anteriores n\'{u}meros, se listan al final del documento en orden de aparici\'{o}n o en orden alfab\'{e}tico. Otras normas de citaci\'{o}n incluyen el apellido del autor y el a\~{n}o de la referencia, por ejemplo: 1) "...\'{e}nfasis en elementos ligados al \'{a}mbito ingenieril que se enfocan en el manejo de datos e informaci\'{o}n estructurada y que seg\'{u}n Kostoff (1997) ha atra\'{\i}do la atenci\'{o}n de investigadores dado el advenimiento de TIC...", 2) "...Dicha afirmaci\'{o}n coincide con los planteamientos de Snarch (1998), citado por Castellanos (2007), quien comenta que el manejo..." y 3) "...el futuro del sistema para argumentar los procesos de toma de decisiones y el desarrollo de ideas innovadoras (Nosella \textsl{et al}., 2008)...".\\
+Esto a generado necesidad de contar con dispositivos para mediciones EEG más competitivos en todas las áreas que, en ultima instancia, resulta en gran beneficio para el crecimiento de la neurociencia en general. Hoy en día, hay implementaciones interesantes de dispositivos portatiles [1], en formas poco convencionales y con varios tipos de sensores. Por ello ha sido evidente el beneficio de toda la comunidad relacionada al área; pues, se ha visto expuesta a poderosos dispositivos que pasan de circuitos extensos y un procesamiento analógico complejo, a un arreglo simple de circuitos integrados apoyados por un fuerte procesamiento digital. Aun así, el mercado presenta pocas opciones disponibles para los que pretenden integrarse en esta ciencia.
 
-\subsection{Enfoque 1}
-De la cuarta subdivisi\'{o}n en adelante, cada nueva divisi\'{o}n o \'{\i}tem puede ser se\~{n}alada con vi\~{n}etas, conservando el mismo estilo de \'{e}sta, a lo largo de todo el documento.\\
+Para el desarrollo de tales dispositivos se deben contemplar varias consideraciones: Seguridad para el paciente, resolución de la señal, movilidad del dispositivo para ser trasladado fácilmente, costo y escalabilidad entre otros. Debemos observar el estado del arte actual enfocándonos en temas más técnicos. El siguiente diagrama de bloques presentado en la figura 1 nos muestra los componentes de un dispositivo EEG genérico.
 
-Las subdivisiones, las vi\~{n}etas y sus textos acompa\~{n}antes deben presentarse sin sangr\'{\i}a y justificados.\\
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{./bloques_EEG.png}
+\caption{\label{fig:bloques_eeg}Diagrama de bloques de un dispositivo EEG Genérico}
+\end{figure}
 
-\subsection{Enfoque 2}
-De la cuarta subdivisi\'{o}n en adelante, cada nueva divisi\'{o}n o \'{\i}tem puede ser se\~{n}alada con vi\~{n}etas, conservando el mismo estilo de \'{e}sta, a lo largo de todo el documento.\\
-\subsection{Enfoque n}
-De la cuarta subdivisi\'{o}n en adelante, cada nueva divisi\'{o}n o \'{\i}tem puede ser se\~{n}alada con vi\~{n}etas, conservando el mismo estilo de \'{e}sta, a lo largo de todo el documento.\\
 
-\subsection{Discusi\'on}
-De la cuarta subdivisi\'{o}n en adelante, cada nueva divisi\'{o}n o \'{\i}tem puede ser se\~{n}alada con vi\~{n}etas, conservando el mismo estilo de \'{e}sta, a lo largo de todo el documento.\\
 
-Es recomendable incluir una tabla resumen de comparaci\'on entre las diferentes soluciones.
+Observamos un primer bloque compuesto por los electrodos. La investigación de estos (los electrodos) es muy extensa y profunda, de hecho, ahondar en ello es un tema completo de investigación.
 
-Para la edici\'{o}n de tablas, cada columna debe llevar su t\'{\i}tulo; la primera palabra se debe escribir con may\'{u}scula inicial y preferiblemente sin abreviaturas. En las tablas y cuadros, los t\'{\i}tulos y datos se deben ubicar entre l\'{\i}neas horizontales y verticales cerradas (como se realiza en esta plantilla).\\
+El segundo bloque es el procesamiento analógico. Si bien se ha observado la reducción paulatina de esta parte, aun es imprescindible en el conjunto antes de poder entrar al mundo digital.
 
-La numeraci\'{o}n de las tablas se realiza de la misma manera que las figuras o ilustraciones, a lo largo de todo el texto. Deben llevar un t\'{\i}tulo breve, que concreta el contenido de la tabla; \'{e}ste se debe escribir en la parte superior de la misma. Para la presentaci\'{o}n de cuadros, se deben seguir las indicaciones dadas para las tablas.\\
+Lógicamente el tercer bloque es el diseño digital. Esto involucra todo lo que conlleva el muestreo, pre procesamiento, transmisión, almacenamiento y post procesamiento de la señal. En si, esta área es poco definida ya que puede ser fácilmente reconfigurada por medio de código.
 
-Un ejemplo para la presentaci\'{o}n y citaci\'{o}n de tablas (citaci\'{o}n indirecta), se presenta a continuaci\'{o}n:\\
+El cuarto bloque engloba a todo el sistema y es sin duda uno de los más importantes; Es la protección eléctrica. Como veremos mas adelante, existen muchos riesgos y consideraciones que deben ser los pilares para todo diseño de dispositivos para la medición de bioseñales.
 
-\begin{center}
-	\begin{threeparttable}
-		\centering%
-		\caption{Participaci\'{o}n de las energ\'{\i}as renovables en el suministro
-			total de energ\'{\i}a primaria \cite{AG02i}.}\label{EMundo1}
-		\begin{tabular}{|l|c|c|}\hline
-			&\multicolumn{2}{c|}{Participaci\'{o}n en el suministro de energ\'{\i}a primaria /\% (Mtoe)\;$\tnote{1}$}\\\cline{2-3}%
-			\arr{Region}&Energ\'{\i}as renovables &Participaci\'{o}n de la biomasa\\\hline%
-			Latinoam\'{e}rica&28,9 (140)&62,4 (87,4)\\\hline%
-			\:Colombia&27,7 (7,6)&54,4 (4,1)\\\hline%
-			Alemania&3,8 (13,2)&65,8 (8,7)\\\hline%
-			Mundial&13,1 (1404,0)&79,4 (1114,8)\\\hline
-		\end{tabular}
-		\begin{tablenotes}
-			\item[1] \footnotesize{1 kg oe=10000 kcal=41,868 MJ}
-		\end{tablenotes}
-	\end{threeparttable}
-\end{center}
+A continuación se describe cada una de estas áreas o componentes, no necesariamente en el orden del gráfico, para una mejor exposición.
 
-\section{Fundamentos Te\'oricos}
-\subsection{T\'ecnica/concepto/Algoritmo 1}
-Recuerde incluir la ecuaciones debidas como se muestra a continuaci\'on:
-	\begin{equation}\label{fuerza}
-	F = ma
-	\end{equation}
-Donde: \\ 
-\(F\) es fuerza\\
-\(m\) es masa\\
-\(a\) es aceleraci\'on\\
-La ecuaci\'on  \ref{fuerza} es utilizada para determinar la .... 
+\subsection{Protección eléctrica}
+\label{sec:orge8b82b2}
+Como se comentó previamente, este bloque concierne a todos los demás, por lo cual se describe en primer lugar, a pesar de que en el proceso no es la “primer etapa”, si pudiera darse un orden de secuencia al proceso.
 
-\subsection{T\'ecnica/concepto/Algoritmo 2}
-\subsection{T\'ecnica/concepto/Algoritmo 3}
-\subsection{T\'ecnica/concepto/Algoritmo n}
+La importancia de este punto, es que este tipo de dispositivos opera directamente con seres humanos, por lo que en primer lugar se debe garantizar su salud antes de cualquier consideración técnica o de costo.
 
+Por otro lado, también debe poder garantizarse la fiabilidad de los datos eléctricos obtenidos para su análisis, pues de lo contrario ningún resultado sería confiable.
+
+\subsubsection{ESD}
+\label{sec:org11f9cc0}
+Los circuitos integrados son el corazón de casi todos los circuitos electrónicos actuales. El inconveniente está en que son altamente sensibles a descargas electroestáticas (ESD) por contacto directo o por transmisión indirecta por el circuito.
+Para el primer caso (contactos directo) existen dos métodos básicos que se implementan a lo largo de la industria.
+
+• Uno.- Utilizar un contenedor de un material no conductor que genere un aislamiento galvanico entre el circuito y el usuario; Esto es una separación física entre ambos. Evidentemente, esto aumenta la resiliencia, mobilidad y estética del dispositivo en general. Como punto aparte se pudiera recomendar la implementación de una capa conductora en el exterior del contenedor que funja como aislante de interferencia electromagnética (EMI) del ambiente. En el subtitulo 2.2.1 se explicarán los motivos de esta última recomendación con mucho más detalle.
+
+• Dos.- Incluir señalizaciones adecuadas sobre estos riesgos y cual debe ser la correcta manipulación del equipo. Las señalizaciones deben ir pertinentemente en el circuito, el contenedor y los manuales del dispositivo. Es imprescindible alertar al usuario de los riesgos presentes que corre tanto el circuito como él mismo.
+
+Ahora bien, el segundo caso (transmisión indirecta) o fuente de riesgo, proviene de los electrodos. Debemos tomar en cuenta tres factores:
+• Uno.- Las personas suelen acumular carga estática sobre la piel
+• Dos.- La función principal de los electrodos es transmitir corriente eléctrica
+• Tres.- En aplicaciones de EEG se recomienda utilizar una alta densidad de electrodos (24 electrodos o más).
+
+En resumen, el dispositivo queda continuamente sometido a varias descargas eléctricas de baja potencia.
+
+Este peligro es inevitable, pues es muy dificil remover toda carga estática sobre una persona. Sin embargo existen varios métodos para reducir el peligro, que van desde reducir el nivel de acumulación de carga del usuario, hasta incrementar la resiliencia del circuto ante una descarga eléctrica.
+
+Para el primer caso existen métodos como el DRL que busca nivelar las cargas presentes sobre el usuario al inducir una carga opuesta. Sin embargo, éste método serán explicado en el subtítulo 2.1.2 ya que su principal beneficio se muestra en la reducción de ruido mas que en ésta área.
+
+El segundo caso es imprescindible ya que la eficiencia de los otros métodos puede variar. Este método mejora la resiliencia general del circuito a través de una configuración de diodos connectados al plano de tierra que permiten descargar los exesos de potencia o almenos mantenerlos en el exterior.
+
+Por lo anterior, es esencial contar con una capa de protección entre los electrodos y el dispositivo. Esto se logra de dos formas: Primero, generando una impedancia de entrada muy alta que sirva de barrera inicial. Segundo, implementando un arreglo de diodos en la entrada que cualquier exeso muy alto de carga pueda tener una ruta alternativa que nuestro circuito.
+
+Generalmente los electrodos utilizan connectores por lo cual es común ver esta capa de protección justo al lado de los conectores.
+
+\subsubsection{Línea de Corriente}
+\label{sec:org143c564}
+Este es sin duda el punto mas crítico de todo el proyecto. Debido a que en esta aplicación se colocan electrodos conductores directamente en la superficie de la piel de una persona, el peligro es extremo en caso de una descarga eléctrica proviniente de una malfuncion en una linea de alta potencia eléctrica.
+
+Por ello se debe eliminar el riesgo de que dicha descarga pueda ocurrir, por medio de un aislamineto galvánico entre la fuente de alimentación y el dispositivo.
+
+El uso de fusibles no es viable debido a su principio de funcionamiento. Estos requieren primeramente que una potencia mas alta de lo que pueden tolerar, atraviese su paso y los destruya. En un caso extremo, la descarga de alta potencia puediera atravesar el fusible antes de que este se quiebre y corte el paso, y asi hacerse paso hasta el usuario con efectos dañinos.
+
+Los dispositivos mas económicos optan por restringir fisicamente la potencia máxima que puede presentar la fuente de energía del dispositivo con el uso de baterías. Esto admás tiene una mayor utilidad en la adquisición de todo tipo de bioseñales en aplicaciónes móviles. No obstante, la mayor parte de las aplicaciones médicas consisten en sesiones estacionarias y largas en muchos casos. Por lo cual esta solución no es capaz de satisfacer por si sola a todas las aplicaciónes.
+
+Para estos casos existen dispositivos como los conversores DC-DC aislados. Similares a los conversores de corriente alterna, estos dispositivos transfieren potenciál eléctrico desde una linea de corriente a través de la transformación una corriente magnétcia y una posterior transformación a corriente eléctrica. Como resultado, se genera una separación física en esta transferencia, poniendo una barrera lo suficientemente álta como para ser el factor de menor riesgo si tal potencia capz de quebrar la barrera se presente. Por ello, estos dispositivos se pueden encontrar en casi cualquier equipo médico con línea de alimentación fija.
+
+\subsubsection{Transmisión de datos}
+\label{sec:orgc115ff7}
+El dispositivo debe ser capaz de grabar y mostrar la medición de las señales en vivo, por lo que es necesario algun tipo de interfaz con el usuario para este médio.
+
+A modo de no sobrecargar la alimentación aislada que conseguimos con los conversores DC- DC o las baterías, podemos crear otro sistema con una alimentación independiente. La comunicación debe ser aislada galvanicamente por lo quepodemos utilizar un método de aislamiento similar a los coversores DC-DC. En este caso, un método eficiente es el uso de optocopladores que conviereten las señales digitales provinientes del microprocesador en señales de luz. Dentro de el mismo componente, un arreglo de sensores de luz y transistores con alimentación extera (proveniente del sistema no aislado) captan estas señales y las transforman en la señal original.
+
+Sin embargo, su uso es visto en pocas aplicaciónes por su limitado ancho de banda y además porque transmitir datos de manera inalámbrica tiene mayores beneficios. Un médio preferido para esto es el bluetooth. Consume poca energia, ideal para los dispositovos que funcionan en base a baterias. Además es muy estable y facil de implementar en software. No obstante, su límite de ancho de banda entra en juego en algunas aplicaciones de EEG.
+
+Una mejor alternativa es la implementación de Wifi ya que su ancho de banda es mucho mas alto y tiene una estabilidad similar. Sin embargo, su implementacion es compleja ya que requiere de una red WiFi preexistente; el consumo de energía es mayor; la implementación de software, si bien es muy flexible, es compleja.
+
+\subsection{Procesamiento Analógico}
+\label{sec:org66630e3}
+Esta es la parte o componente que más se ha visto impactada por la sofisticación de la tecnología de ADCs, ya que a reducido considerablemente la cantidad de procesamiento analógico necesaria.
+
+Esto es bueno ya que permite reducir costos a la par que disminuye la complejidad de los diseños, otorgando ventajas para llegar a donde antes no se habia llegado en calidad, presición y disponibilidad para el medio. Sin embargo aún se ve el impacto positivo del procesamiento analógico, como se verá en los próximos incisos.
+
+La relación que existe entre la señal con el ruido del ambiente, se denomina taza de señal a ruido o SNR (por sus siglas en inglés Signal to Noise Ratio). Como veremos en el subtitulo C.3 del capítulo 2.2.1 (Naturaleza de la Señal) este parámetro es de gran utilidad a la hora de evaluar la calidad de la medición. Por ahora podemos mencionar que la principal misión del circuito analógico es acondicionar la señal para la digitalización a través de la mejora del SNR.
+
+En esta etapa estamos considerando 3 factores principales: Ruido de Nodo Común , Offset DC y Aliasing.
+
+[imagen 1]
+
+La señal primordial de \emph{ruido de nodo común} proviene de las lineas de corriente, asi tambien como las luces fluorecentes (si estas estan prescentes) en la habitación en la que se esta realizando la medición.
+
+El \emph{Offset DC} ocurre debido a la estática y esta puede variar entre electrodo y electrodo.
+
+Finalmente observamos la magnitud de la Bioseñal es muy pequeña. Para ello debemos tomar en cuenta el concepto de solapamiento (aliasing).
+
+Este simple concepto establece que se debe acondicionar la señal para maximizar la resolución de medida. En este caso observamos que debemos tratar con 3 problemas; Rechazo del Ruido de Nodo Común o CMNR1, disminuir el desfás producido por señales DC, amplificar la señal para alcanzar una resolución de 0.5μV [2].
+
+\subsubsection{Driven Right Leg}
+\label{sec:orgdc07b38}
+El circuito introducido por Bruce B.Winter y John G. Webserter en 1983 [3], es un pilar en los dispositivos profesionales de medición de cualquier bioseñal por su eficacia en la reducción de ruido. Este aporte ha demostrado su beneficio a lo largo de todas las bioseñales. Su principio de funcionamiento propone reducir el ruido que existe sobre el usuario al inducirle una señal invertida del ruido presente. De esta manera, se logran efectos similares al aterramiento sin poner en riesgo la eficacia de las medias de protección implementadas en el dispositivo. Una práctica común es utilizar cables coaxiales y utilizar esta señal para la linea más externa. Esto reduce el rudio EMI recojido por los cables.
+
+Sin embargo, su uso está empezando a reducirse a pesar de que este ha sido un estándar en las últimas décadas. Aun así, su uso aún es fuertemente recomendado en la industria por su gran relación de costo/beneficio[4]. Esta reducción se ha dado tanto por las mejoras de los ADCs como el aumento de poder de procesamiento digital [5].
+
+\subsubsection{Filtros}
+\label{sec:orge9fe170}
+En especial en circuitos que no se utilice el DRL, el filtro pasa altos sirve para estabilizar la señal a nivel de tierra para evitar saturación en la etapa de amplifiación. Debemos recordar que esta señal idealmente debe ser amplificada mas de 100 veces para poder obtener una buena resolución de la señal. La frecuencia de corte de este filtro, aun en la etapa digital, no debería sobrepasar 1Hz.
+
+El aliasing tradicionalmente es lidiado con un filtro que obedece las normas de nyquist en el cual su frecuencia de corte es almenos la mitad de la frecuencia de muestreo mínima que se va a utilizar. La IFCN indica que el filtro debe ser en 70Hz con un atenuamiento de 12dB/dec cuando la frecuencia de muestreo es de 200 muestras por segundo (200 Hz); es decir, una proporción de 1 a 3. Las ondas electroencefalográficas pueden llegar a alcanzar en algunos casos 100Hz. Por lo cual, si el diseño lo permite se puede optar por un filtro en 100Hz con un muestreo de 350Hz. Sin embargo, no es recomendable bajar de 70Hz para el filtro de aliasing ya que se pierde información muy importante.
+
+La estática existente sobre el cuerpo genera un desfase de la señal. Este desfase puede causar saturación en el sistema de muestreo o almenos una desutilización de sus capacidades. Por ello se utilizan filtros pasa altos en casos que haya grandes amplificaciónes de la señal.
+
+Para la arquitectura de los filtros se debe utilizar filtros activos para evitar la degradación de la señal. Entre estos existen dos arquitecturas principales; Sallen Key y Multiple Feedback o MFB
+
+1 CMNR: Por sus siglas en inglés Common-Mode Noise Rejection
+
+En el subtítulo D del capítulo 2.2.2 (Procesamiento analógico) se ahondará en estas arquitecturas.
+
+Mientras la arquitectura Sallen Key presenta un número reducidos de componentes, no se recomienda para filtros pasa bajos debido a su respuesta en frecuencias altas en las que su atenuación deja de ser efectiva. La arquitectura MFB entonces es mas adecuada en esta situación. Para el filtro pasa altos entones, es recomendable una arquitectura Sallen Key debido a su reducido número de componentes.
+
+No obstante para ambos filtros se debe considerar las tolerancias de los componentes. Si bien los métodos de manufactura han logrado hitos muy importantes en la fabricación y calidad de los componentes pasivos, su sensibilidad ante cambios de temperatura y voltajes agregan complejidad a la implementación de filtros analógicos. Ahora bien, si los componentes son selecciónados aprovechando al máximo su proporcionalidad, se puede minimizar el efecto negativo de sus tolerancias.
+
+\subsubsection{Amplificadores de Instrumentación}
+\label{sec:orgbae40bc}
+El contexto de medición de EEG nos presenta un estado donde la señal es hasta mil veces mas pequeña que el ruido proviniente del ambiente. Es decir, existe naturalmente un SNR extremadamente bajo. En este sentido la señal que buscamos esta completamente opacada.
+Para lidiar con este tipo de aplicaciónes se diseñaron este tipo especial de amplificadores.
+
+Existen varios diseños incluyendo arreglos de dos a tres amplificadores opreacionales tanto en circuitos integrados o circuitos tradicionales. No obstante todos tienen el mismo principio de funcionamiento.
+
+Estos amplificadores tienen 2 canales para medir la señal; El primero sirve como referencia del ruido, y el segundo como referencia de la señal. El amplificador resta las señales amplificando finalmente la diferencia entre ambas. En si el funcionamiento es muy similar a un amplificador operacional tradicional. La excepcion esta en que este arreglo especial logra restar las señales de una manera mucho mas precisa y predecible.
+
+Idealmente el ruido será el mismo en ambos canales, por lo cual, lo que queda termina siendo unicamente la señal. Sin embargo, en un caso real lo que ocurre es una tasa de rechazo al ruido de nodo común (CMNR) el cual indica cual es la proporción de atenuación ante una señal presente simultaneamente en los dos canales.
+
+\subsubsection{ADCs de alta resolución tipo Delta-Sigma}
+\label{sec:orgb1f0faf}
+Estos conversores análogo-digital (ADC) utilizan un método de sobre muestreo, esto permite alcanzar resoluciones más altas a costa de reducir su frecuencia de muestreo máxima. Ya que las bioseñales no sobrepasan este límite, son el candidato ideal para esta tarea de alto ruido ya que se puede cargar mas fuertemente al procesamiento digital que resulta en una simplificación del diseño asi como en reducción de costos. Además, estos suelen tener Amplificadores Programables (PGA) integrados que permiten adecuar la señal dinamicamente para evitar saturación.
+
+Se pueden utilizar multiplexadores para enrutar múltiples señales a un mismo ADC. Esto es factible si la frecuencia máxima de muestreo del ADC es mayor que el doble de la frecuencia máxima de la señal a medir. En bio señales, debido a su naturaleza de baja frecuencia, este método de optimizar componentes es viable. Sin embargo al realizar este tipo de medición secuencial, las señales se ven desfasadas entre si. Si bien existen algorítmos para extrapolar las señales y mitigar este efecto negativo, la medición de las señales EEG no se consideran como validas si tienen un desfase mayor a 25μs lo cual estas mediciones secuenciales no pueden alcanzar ya que presentan desfases >45μs. Por ello se utiliza un ADC por cada canal al medir señales EEG. Hoy en dia se pueden encontrar circuitos integrados (IC) de 8 canales que contengan un ADC diferencial y un PGA por cada canal.
+
+\subsection{Tipos de electrodos}
+\label{sec:orgbe9c9ef}
+En esta área existe un gran espectro de variantes las cuales se diferencian por forma, material, tipo de contacto e inclusive si tienen componentes activos en sus terminales. Existen dos diferencias primordiales: si son activos o pasivos; si son secos o húmedos.
+
+\subsubsection{Húmedos/Secos}
+\label{sec:org173ec2f}
+La piel es la interfaz entre el electrodo y el cuerpo donde se producen las señales.
+
+En la superficie de la piel encotramos que existen varios componentes desde sudor, grasa y piel muerta entre otros. Estos componentes afectan directamente a la connección lo cual supone una degradación en la medicion de las señales.
+
+Por ello se pueden utilizar compuestos que mejoren la conductividad de la superficie de la piel, mejorando así la calidad de la señal y estabilidad de la misma.
+
+Sin embargo, el uso del gel no es siempre posible en algunas aplicaciónes donde la sesion sea muy larga, ya que este se evapora y la connección termina degradandose. Por esto, a veces es mejor calibrar el dispositvo sin la utilización de este compuesto.
+
+A estos se los llama electrodos secos.
+
+\subsubsection{Activos/Pasivos}
+\label{sec:orga0116b4}
+Esta es una de las primordiales diferencias en los electrodos.
+
+Debido a que el dispositivo de medición suele estar lejos del electrodo, el cable que los interconecta funge como antena captando ruido extra que induce en la señal.
+
+Para mitigar este ruido, en algunos casos se coloca un seguidor de voltaje o en algunos casos amplificador de señal justo encima del electrodo (Activo). De este modo se refuerza la señal para evitar perdidas e interferencias en los cables.
+
+Este diseño no es esencial por lo cual muchos dispositivos conectan los electrodos directamente a los cables (Pasivo).
+
+De ambos, los electrodos activos muestran el mejor desempeño aun con electrodos secos. No obstante, debido a su costo y complejidad, su implementación es muy compleja.
+
+\subsubsection{Material}
+\label{sec:org58948b3}
+El material mas utilizado es el plata / cloruro de plata (Ag/AgCl). No obstante, esta puede ser como un recubrimiento externo, o de composición interna. Existen varios tipos de electrodos disponibles de manera comercial con distitnos recubrimientos incluyendo oro, estaño, Ag/AgCl. Se ha demostrado que los electrodos de Ag/AgCl sinterado son la mejor alternativa por su respuesta eléctrica en ruido de baja frequencia, durabilidad y desgaste entre otros [6].
+
+\subsubsection{Forma}
+\label{sec:orgf743e25}
+A diferencia de las demás bioseñales, en la EEG existen tres variantes; planas, en copa, estilo peine. La forma a utilizar depende de el caso de uso específico asi como si son activos/pasivos o secos/húmedos.
+
+\begin{itemize}
+\item Planas:
+\end{itemize}
+Son los mas comunes entre todas las bioseñales, principalemente por su costo bajo en fabricación. No obstante no son los ideales para la electroencefalografía, donde el electrodo debe llegar al cuero cabelludo evitando el cabello del paciente. Por lo cual la colocación de dispositivos para EEG con este tipo de electrodos suele ser muy dificultosa en areas que hay cabello.
+
+\begin{itemize}
+\item Copa
+\end{itemize}
+Estas presentan similitudes en cuanto a la complejidad de colocación de las planas. Sin embargo, estas ofrecen un espacio que sirve como reserva para colocar el gel conductivo. En estos electrodos suele encontrarse una apertura redonda para poder agregar gel una vez puesto el electrodo. Esto es muy importante ya que el gel se va evaporando y consumiendo, ya que no se puede hacer un sello como en el caso de los electrodos diseñados para la piel.
+
+\begin{itemize}
+\item Peine
+\end{itemize}
+El mas sencillo de colocar. Permite mantener un contacto mas firme y sin esfuerzo, por lo tanto, mas resistente al movimiento. Sin embargo, este puede llegar a ser mas incomodo, ya que cuenta con puntas rígidas. Por ello se investiga el diseño de electrodos flexibles impresos en 3D con un recubrimiento de Ag/Cl. De este modo se logra mantener la comodidad asi como la facilidad de aplicación.
+
+\subsection{Procesamiento Digital}
+\label{sec:org797e382}
+Las señales eléctricas del cerebro, obtenidas mediante diferentes tareas de procesamiento analógico descritas previamente, son datos que para convertirse en información relevante, debe ser procesada ya sea para amplificarla, incrementar la resolución, filtrar ruido o señales no deseada, etc. En resumen, se debe modificar y traducir la señal analógica en información digital, y esa es la tarea que nos ocupa en este capítulo.
+
+\subsubsection{Transmisión de Datos}
+\label{sec:orga4cc627}
+Hoy en dia, los microcontroladores han creado grandes ventajas. Estos son capaces de realizar tareas simples y repetitivas para luego comunicarse con un sistema más inteligetne. En el caso de un computador vemos un impacto positivo al reducir la carga del CPU asi como la mejora del rendimiento de la aplicación. A fin de cuentas, un microprocesador realizando una sola tarea es capaz de mantener el rendimiento a lo largo del tiempo comparado con un CPU que tiene cargas mas grandes.
+
+Evidentemente debe existir un medio de comunicación entre ambos. Como se mencionó en el subtitulo 2.1.1, el uso del bluetooth es la alternativa de preferencia de una gran parte de dispositivos. Sin embargo hoy en día cada vez es más y más viable la utilización de WiFi con el alza de IOT. Por ello, los dispositivos mas populares estan empezando a adoptarlo. En el caso de la comunicación serial por USB o bluetooth, el protocolo es simple y universal. Pero, en el caso del WiFi existen muchas formas de implementación.
+
+Existen dos enfoques principalesque se toman actualmente para la comunicación por WiFi de microcontroladores con computadores. Uno es la utilización de Apis y Websockets; y Segundo es la utilización de una red MQTT. Esta última es la más comun debido a que el protocolo es muy ligero y presenta una carga muy baja para el microprocesador. Asi mismo permite la intercomunicación de un volumen altísimo de dispositivos por su estructura de Publicador/Subscriptor. Sin duda esta via puede satisfacer la transmisión de datos, en especiál si se implementan más sensores para relacionar datos.
+
+Sin embargo, las apis son el método preferido de intercomunicación con aplicaciónes y servidores externos. Los websockets son una solución ideal si unos cuantos dispositivos quieren transmitir continuamente datos al servidor. Ambas soluciónes son viables y relativamente sencillas de implementar.
+
+\subsubsection{Servidor(es)}
+\label{sec:org72cd3ac}
+Del lado del computdaor, debe existir un programa que se encargue de comunicarse con el microprocesador y recibir la información que este manda. En esta área hay espacio muy grande para realizar cambios, procesar y desarrollar nuevas funcionalidades. Existen ciertos parámetros y metodologías que por su robustéz han sido adoptadas por la mayoria de sistemas informáticos de toda indole. Por el lado de los protocolos de comunicación estamos hablando de HTTP(s), Websockets sobre TCP, MQTT. Por el ládo de modelos de comunicación con el servidor encontramos a las RESTful Apis Request-Response, los Webhooks, y los mensajeamientos Publish-Subscribe. Finalmente, para almacenamientos podemos guardarlos con algun formato como CSV o sin formato en archivo de texto aunque idealmente se manejan bases de datos. En estas últimas notamos idónea las bases de datos en Series de Tiempo a pesar de que las mas comúnes son las SQL Relacionales.
+
+\subsubsection{Interfáz Gráfica}
+\label{sec:orgada7f0c}
+Comunmente cada fabricande de estos dispositivos presenta su propia interfaz de usuario que cumple con los requerimientos a presentar en el subtítulo D del capítulo 2.2.3 (Procesamiento Digital). En raras ocasiones, estas interfaces son compatibles con dispositivos de otros fabricantes. No obstante existen 2 softwares que si lo permiten ya que cuentan con documentación amplia sobre una api de integración robusta asi como secciónes enteras de código abierto.
+
+La primera es el software de OpenBCI y la segunda es el Neuromore Studio. Esta última solo cuenta por el momento, con soporte para dispositivos de Neuromore, Emotiv, OpenBCI. No obstante, cuentan con una comunidad creciente respaldada por Neuromore, lo que la hace muy atractiva para nuevos desarrolladores.
+
+\subsection{Soluciones Previas}
+\label{sec:orgca943f2}
+Existen muchos dispositivos médicos profesionales en el área. Sin embargo, por el elevado costo existen dispositivos diseñados para la economía del público en general que tienen capacidades muy reducidas en comparación.
+Esto implica un daño colateral en la calidad de las investigaciones que surjan a través de estos dispositivos.
+
+[Tabla Comparativa]
+
+Podemos observar que todos los dispositivos logran una resolución desde adecuada a muy buena, sin embargo quedan cortos en el número de canales disponibles.
+
+Se debe notar que la frecuencia de muestreo en algunos dispositivos, cubre la necesidad mínima para una buena medición EEG. No obstante, por medio de software se puede aumentar esta taza considerablemente.
+
+El tipo de electrodos es un factor muy importante para la facilidad de uso y la calidad de medición.
+
+Un dato llamativo es que los dispositivos que son de tipo Open Source son los únicos capaces de medir otras bio señales en esta gama de dispositivos. Existen algunos dispositivos capaces de medir múltiples bioseñales que no fueron incluidos por su costo elevado.
+
+La inclusión del Gtec Hlamp se tiene como parámetro de referencia ya que contrasta el cambio de capacidades vs precio de una manera mas directa ya que pertenecen a la misma empresa. En este punto de vista podemos observar una tendencia exponencial en cuanto a precio en contraste del número de canales
+
+\subsection{Requerimientos de Neurología}
+\label{sec:org23fbaf8}
+Debido a que los resultados y análisis de este emprendimiento involucra a seres humanos, y que los dispositivos (principalmente analógicos) intervienen directamente en el cuerpo del paciente, los dispositivos deben contemplar y respetar los estándares y recomendaciones mas importantes de las instituciones representativas en este ámbito. Algunas de ellas son:
+
+\subsubsection{IFCN}
+\label{sec:org63c85fd}
+El IFCN es la Federación Internacional de Neurofisiología Clínica (por sus siglas en ingles), que consolida los esfuerzos individuales y corporativos para promover buenas practicas en la neurofisiología clínica, a través de la educación e investigación a través del mundo.
+
+Por tanto, todo emprendimiento relacionado al área de la neurociencia, debe considerar los estándares emitidos por esta organización, en su calidad de voz autorizada para incentivar y promover buenas prácticas.
+
+\subsubsection{ACNS}
+\label{sec:org0e0098c}
+Es la sociedad americana de neurofisiología clínica (ACNS por sus siglas en inglés), es otra de las instituciones responsables de normar y generar regulaciones que deben ser atendidas.
+\subsubsection{BCI}
+\label{sec:orgbd7f6d1}
+Podemos observar que la limitación de canales y la falta de tratamiento analógico en las señales son los factores principales que les evitan alcanzar nivel profesional de neurología. Como tal,
+
+\section{Fundamentos Teóricos}
+\label{sec:org4a808d6}
+En un proyecto de \textbf{esta indole multidisciplinaria} podemos observar tres áreas importantes: procesamiento de señales, circuitos electrónicos y software de computador.
+
+Estas mismas se encuentran entrelazadas entre sí creando un sistema integral. Por ello es mas conveniente hacer un análisis
+
+Podemos observar cómo esto es posible si nos enfocamos en estas tres características inherentes de las señales: frecuencia, magnitud y SNR.
+
+\subsection{Naturaleza de la Señal A Origen}
+\label{sec:orgaf67549}
+Antes de poder analizar las diferentes metodologías, debemos comprender las características que presenta la señal. Por ello analizamos su fuente y analizamos su medio repleto de ruido e interferencias. “encontrar oro en medio de la tierra”
+
+La señal se origina en las sinapsis entre neuronas que producen impulsos eléctricos. Estos impulsos son lo suficientemente altos como para propagarse hazta la superficie del cuero cabelludo. Es entonces donde podemos colocar electrodos para medir los niveles de electricidad, y con un poco da astucia, encontrar la señal.
+
+Por este motivo y la gran similitud entre las bio-señales, un dispositivo que sea capaz de medir una señal EEG es altamente compatible para medir las otras mencionadas anteriormente \cite{Ahamed2015}.
+
+No obstante, esta se encuentra en un ambiente hostil. Esta taréa fue denominada como “encontrar oro en medio de la tierra” debido a su dificultad.
+
+Hay 3 fuentes eléctricas que opacan la señal que ya es bastante tenue por haberse hecho paso desde una connección neuronal hasta la superficie del cuero cabelludo. Estas son: otras bioseñales producidas en lugares cercanos a la zona, acumulación de cargas sobre la piel, recepción de cargas sobre la piel.
+
+\subsubsection{Ruido}
+\label{sec:org1398eaa}
+Como se mencionó anteriormente, existen muchas fuentes de ruido que suelen ordenes de magnitud más altos que la señal EEG.
+
+Para lidiar con esta situación se han desarrollado varias tecnologías y metodologías para lidiar con el ruido. Para entender estas metodologías debemos estudiar primeramente compreender las características que presentan las señales de ruido.
+
+Las principales fuentes de ruido presentes proveienen de interferencias de otras bioseñales y señales electromagnéticas que permean el ambiente. En cuanto a las bioseñales, las principales son ruido por la activación de los músculos de la cabeza, en especial los de la cara y los encargados de mover a los ojos. Estas señales son hasta mil veces mas grandes que las neuronales en el punto de contacto con electrodos. Un factor que explique esto pudiera ser que los musculos estan mas expuestos y cercanos a la región, por lo que, la señal no se dispersa tanto como las neuronales.
+
+\subsubsection{Métricas}
+\label{sec:org9e46728}
+\begin{enumerate}
+\item CMRR
+\label{sec:org50943e0}
+La taza de rechazo de nodo común o CMRR (por sus siglas en inglés Common Mode Rejection Ratio) parte de el principio de modo común.
+En aplicaciónes de esta índole es muy importante la implementación de mecanismos que permitan maximizar el CMRR.
+
+Para separar la señal del ruido se puede colocar dos sondas, uno en la region mas cercana a la pequeña señal y otro en una region aledaña que ya no haya . Podemos asumir que la diferencia existente entre las dos entradas, es la señal que buscamos.
+
+Lo que se busca es atenuar al máximo la señal compartida entre las dos sondas asi dejamos idealmente la señal que andamos buscando. En la practica el atenuamiento no es total, pero si medible. Este atenuamiento se calcula decibeles y es el denominado CMRR.
+
+La IFCN señala cual es la minima taza de rechazo que se puede tolerrar.
+
+\item Resolución del muestreo
+\label{sec:org38627cc}
+La magnitud de la señal se encuentra en el orden de 1-160 μV. Por ello debemos acondicionar la señal para poder obtener una resolución adecuada. La IFCN exige una resolución mínima de 0.5μV con un ADC de almenos 12bits. Esto nos abre paso a muhcas alternativas. Si se utiliza un ADC de mayor cantidad de bits con un ancho de banda de 5V, se pudiera llegar teóricamente a tal resolución. Sin embargo esto no es posible ya que actualmente no hay ADCs de tal resolución. No obstante, podemos aprovechar los ADCs modernos para evitar las grandes etapas de amplificación que se utilizaban antes. En muchos casos se lograban amplificaciónes de 10’000 veces para poder cumplir la meta.
+
+Un ADC de moderno alcanza 24 bits. Esto significa 16’777’216 unidades de medida. Si distribuimos esto tenemos que
+
+[5 volts/16’777’216 u = 0.298μV]
+
+Además, estos ADCs tienen integrados amplificadores hasta de 128 veces. Por lo cual se tiene una gran flexibilidad al respecto.
+
+\item Impedancia
+\label{sec:org5e727bb}
+Al hablar de impedancia nos estamos enfocando en a la resistividad eléctrica que existe en la entráda al dispositivos y en la impedáncia entre cada electrodo.
+
+Primero, como se mencionó en el subtítulo 2.1.1, la impedancia debe ser alta para proteger al circuito, pero tambien debe ser alta para evitar la degradación de la misma. Si la impedancia no es lo suficientemente alta, el voltaje de la señal puede disminuir aun más ya que la potencia que tiene la señal es extremadamente baja. Por ello, si la impedancia es baja, la señal se descargara y se perderá antes de ser procesada.
+
+Segundo, nos interesa saber cual es la impedancia eléctrica entre los electrodos ya que esta métrica nos permitirá determinar si existe un buen contacto con la superficie de la piel. En este caso nos interesa minimizar la impedancia para incentivar la exposición de señales eléctricas. Observamos que la utilización de geles con contenido clorhídrico
+\end{enumerate}
+
+\subsection{{\bfseries\sffamily TODO} Procesamiento analógico}
+\label{sec:org9cb2bfb}
+Como se mencionó anteriormente, esta es una de las partes principales del dispositivo. A continuación veremos las distintas arquitecturas utilizadas, el diseño de filtros y capacidades de estos diseños.
+
+\subsubsection{DRL}
+\label{sec:org54b5a6e}
+El circuito DRL es simple y solo tiene estas recomendaciones 
+
+[Foto del circuito]
+
+\subsubsection{Operacionales de instrumentación}
+\label{sec:orgcd66827}
+Existen dos tipos principales de Amplificadores Operacionales de Instrumentación; configuración de dos y configuración de tres amplificadores.
+
+\subsubsection{ADC Delta-Sigma de 24Bits Para EEG}
+\label{sec:orge87d76c}
+
+[Diagrama de Bloques, funcionamiento interno]
+
+\subsubsection{Filtros Activos}
+\label{sec:orga0c3d6f}
+La forma mas básica de crear un filtro de frecuencias es con el uso de una recistencia y un capacitor. A esta configuración se le llama un filtro pasivo RC. Se puede poner en dos configuraciones, pasa altos y pasa bajos. Observamos las figuras:
+
+[figura rc 1][figura rc 2]
+
+Como lo demuestran sus ecuaciónes, este tipo de filtro pasivo RC se considera de primer orden y por si solo es poco util. Para mejorar el rendimiento se utilizan amplificadores operacionales que permiten estabilizar el flujo de corriente para mejorar la precición. A este tipo de filtros se denominan filtros activos. Esto se debe a que los componentes pasivos son muy suceptibles a perturbaciones externas como cambios de temperatura. Si la corriente es irregular, entonces la potencia disipada por estos componentes lo será, generando variación en temperatura y valor de los componentes.
+
+[circuito rc pasa altos opamp]
+[circuito rc pasa bajos opamp]
+
+Como observamos en la figura, el diseño es simple, y nos permite encadenar uno frente a otro indefinidamente sin que la señal pierda potencia. No obstante este diseño es poco eficiente ya que utiliza un amplificador operacional para crear un polo. Existen dos arquitecturas principales que permiten optimizar el diseño; Sallen Key, Multiple Feedback. En ambos casos, se utiliza un amplificador operacional para generar dos polos en vez de uno.
+
+[Arq, sallen key] [Arq, MFB]
+
+Como podemos apreciar, la arquitectura Sallen key utiliza menos componentes dejandonos con la pregunta; ¿por que Multiple Feedback es una arquitectura principal entonces? La explicación es un poco mas compleja, y nos debemos ir al plano de bode para analizar la respuesta en frecuencia de cada sistema. Las funciones de transferencia de ambos sistemas, pueden expresarse de la siguiente manera.
+
+[f(s) sallen key] [ f(s) MFB]
+
+Si analizamos su respuesta a una entrada de escalón unitario en el plano de Bode obtenemos los siguientes resultados
+
+[LP sallen key / MFB]
+[HP Sallen key/ MFB]
+
+Si observamos la respuesta en ruido podemos obtener aún mas información: 
+
+[sallenkey/MFB]
+
+En conclusión observamos que la arquitectura Sallen key, si bien puede ayudar a reducir considerablemente el numero de componentes en la implementación de filtros de alto orden, pierde su efectividad considerablemente en frecuencias altas. Sin embargo, este efecto negativo se puede mitigar con la combinación de ambas arquitecturas en filtros de alto orden.
+
+Ahora existe una última consideración a tomar en cuenta para el diseño de filtros RC activos o pasivos; y esta es la proporciónes en las que se presentan los componentes RC. Si analizamos la ecuación [eq1] notamos que existen 2 variables arbitrarias que podemos elegir para obtener el mísmo filtro. Si analizamos el efecto de favorecer en una magnitud sobre la otra podemos observar lo siguiente.
+
+[bode Chebyshef, Butterworth, Bessel, etc]
+
+En la figura observamos el diagrama de bode de 4 filtros de primer orden con la misma frecuencia de corte. Aquí se evidencian los efectos de favorecer a las variables que mencionabamos anteriormente. La realidad es que el comportamiento y la manofactura de las resistencias y los capacitores es muy distinta por lo que la [eq1] no nos brinda todos los detalles necesarios para entender cual es un buen diseño.
+
+Los cuatro filtros observados son relaciónes estándares denominadas Chebyshef, Butterworth, Bessel, etc. Los filtros Chebyshef son aquellos que tienen una relacion entre los capacitores y las resistencias. Los filtros Butterworth son aquellos que tienen una relacion entre los capacitores y las resistencias. Los filtros Bessel son aquellos que tienen una relación entre los capacitores y las resistencias. Como observamos, el Butterworth es el que presenta la respuesta mas balanceada de todas. Pero esto no quiere decir que es el mejor y solo esta relación se deberia utilizar siempre.
+
+[filtro compuesto butterworth, chebyshef, bessel]
+
+En la figura observamos el diagrama de bode de los filtros antes mencionados. Pero en este caso, estos filtros han sido cuidadosamente acomodados en secuencia para un resultado conjunto. Si superponemos esta respuesta con una que solo conste del mismo tipo de filtro podemos observar que, se pueden alcanzar los mejores resultados si se elijen los filtros de manera cuidadosa.
+
+\subsection{{\bfseries\sffamily TODO} Procesamiento Digital}
+\label{sec:org62b28da}
+El procesamiento digital hoy en día es donde
+\subsubsection{Muestreo}
+\label{sec:org3107a0a}
+Para ello observamos que el ancho de banda de nuestra señal es de 100Hz. La IFCN nos insta a utilizar una frecuencia de muestreo no menor a 200 Hz para un filtro pasa bajos de 70Hz en EEG. Sin embargo, para aumentar la flexibilidad del dispositivo consideramos la opción de compatibilizar otras bioseñales. La bioseñal que registra mayor frecuencia es la Electromiografía alcanzando hasta los 500Hz. La ventaja que tenemos es que la frecuencia de muestreo puede ser acondicionada en el instante por medio de software. Simplemente debemos considerar que la taza de muestreo debe ser tal que cumpla los requisitos de Nyquist. La salvedad que debemos tomar en cuenta es lo que indica la IFCN, el escalamiento deben ser múltiplos de 50 o 64, por ejemplo se pudiera utilizar una taza de muestreo de 1050 o 1024 mínima para alcanzar una compatibilidad con todo tipo de bioseñales.
+\begin{itemize}
+\item Resolución, amplificación
+\end{itemize}
+\subsubsection{FFT}
+\label{sec:org1c817e5}
+La Transformada Rápida de Fourier o FFT2 es un algoritmo que nos permite calcular la Transformada de Fourier Discreta de una secuencia. Esto es especialmente útil para observar la calidad de nuestra medición. A través de esto podemos determinar si existen interferencias prominentes en la señal o fuentes de ruido que puedan ser aisladas por medio de un filtro digital. Pasando esta etapa de acondicionamiento y calibración, la FFT ayuda al técnico realizando la medición ya que le permite observar las características de las ondas cerebrales. Por medio de la FFT puede observar el estado del paciente al ayudarle a distinguir entre los distintos tipos de señal de EEG.
+
+\subsubsection{Filtros Digitales}
+\label{sec:orgc91546a}
+Existen diversos tipos de algoritmos para poder filtrar frecuencias en señales digitales. Estos filtros pro
+
+\subsubsection{Visualización y almacenamiento}
+\label{sec:orgfbe9d50}
+El medio de visualización debe mostrar idealmente en vivo todas las mediciones que se están tomando. Esta debe presentar las opciones de incluir filtros digitales pasa altos en al menos 0.5m 1.0, 2.0 y 5.0 Hz; filtros digitales pasa bajos en al menos 15, 30 y 70Hz; opcionalmente filtro rechaza banda en 50-60Hz. Deben ser capaces de mostrar las configuraciones de ganancias y filtros. También debe presentarse un método de escalamiento de la señal con un mínimo de resolución de 120 puntos de data por segundo, por canal. Así mismo debe ser capaz de mostrar segmentos simultáneamente de una medición y otra [2].
+
+[FOOTNOTE 2 FFT: Por sus siglas en inglés Fast Fourier Transform]
+
+\subsection{Comunicación}
+\label{sec:org744103c}
+En esta parte nos referimos a la comunicación en 2 puntos. El primer punto de comunicación es entre el microcontrolador y los dispositivos esclavos que debe administrar como ser sensores, ADCs y otros periféricos. Y el segundo punto se da entre el microcontrolador y una unidad de cómputo externa mas poderosa. Esta arquitectura nos podrá permitir una mayor flexibilidad en la implementación así como en la escalabilidad a futuro.
+
+\subsubsection{Dispositivos Periféricos}
+\label{sec:org212add0}
+Como se mencionó, el avance en la industria de dispositivos de ADC ha sido tremenda. Así mismo lo ha sido el avance de sensores y dispositivos especializados. La necesidad de implementar mas poder de procesamiento mientras se tiene una optimización de costos máxima nos ha llevado a la creación de dispositivos semi inteligentes capaces de realizar tareas especializadas. Un ejemplo de esto son los ADCs Delta Sigma. Estos, pueden convivir en un solo circuito integrado con múltiples funciones de amplificación, enrutamiento de señales. La manera de controlarlos es con una unidad de cómputo como un microcontrolador. Este último puede comunicarse con el ADC de manera digital para indicarle como debe funcionar y el ADC puede devolver los datos de manera digital por esta misma vía. Para ello se han estandarizado a lo largo de la industria diversos protocolos de información. Uno de ellos es el SPI. Este nos permite no solo establecer una comunicación con un dispositivo esclavo, sino con muchos dispositivos optimizando el cableado necesario para logra esto. En si, similar a una intranet, este protocolo nos permite dirigir instrucciones a dispositivos específicos a través de una red común de información.
+
+[Estructura de funcionamiento SPI]
+
+\subsubsection{Anchodebanda}
+\label{sec:org8699433}
+Se mencionó brevemente en el subtítulo 2.1.1 acerca de las limitantes que puede presentar el bluetooth en aplicación. Para poder apreciar ello debemos tomar en cuenta los siguientes datos:
+
+\begin{enumerate}
+\item La taza de muestreo de EEG mínimamente debe ser de 200Hz por canal. No obstante tazas de muestreo mayores son recomendadas. En la industria se evidencias tazas de muestreo desde 500Hz hasta las decenas de kilo hercios.
+\item Según la IFCN, para una sesión de EEG se deben utilizar mínimamente 24 electrodos y preferiblemente 32 o más. De hecho, en algunas aplicaciones de EEG vemos que se pueden llegar a utilizar hasta 128 y 256 electrodos.
+\item La IFCN recomienda el muestreo de señales con un muestreador de al menos 12 bits, pero vemos en la industria una predominancia de la utilización de ADCs de 24 bits.
+\item Como se verá en el subtítulo 2.2.4 D; a la información medida de cada electrodo se le
+\end{enumerate}
+aumenta una cabecera que puede ser cosas como el tiempo específico en el que la medida fue tomada, el número de canal, impedancia entre otros datos.
+Podemos un cálculo para determinar cual debería ser el ancho de banda de transmisión de datos saliente del microcontrolador que puede ser expresado en la siguiente ecuación:
+
+[MATH EQUATIONS]
+BW = (Res\textsubscript{byte}+HCH\textsubscript{byte})*Ch*Sr+DP\textsubscript{byte}+protocol
+En donde:
+BW = Ancho\textsubscript{de}\textsubscript{Banda} (bytes/s) Res\textsubscript{byte} = resolución\textsubscript{adc}/8 H\textsubscript{byte} = Cabecera de cada canal DP\textsubscript{byte} = Cabecera del mensaje Ch = número\textsubscript{de}\textsubscript{canales}
+Sr = frecuencia\textsubscript{de}\textsubscript{muestreo}
+
+Si asumimos que la resolución del ADC es de 24 bits; la cabecera por canal de \_\_ bits; un número de canales variable de 24-256; una frecuencia de muestreo de 200, 500 y 1024Hz; y una cabecera general de 8 bytes podemos genera la siguiente gráfica:
+
+En ella observamos “se requiere x ancho de banda*
+\begin{itemize}
+\item El ancho de banda de bluetooth 4.0 es de \uline{\_}
+\item El ancho de banda de algunos optocopladores genéricos es de \uline{\_}
+\item El ancho de banda de Wifi 801.1 a, es de\_\_\_
+\end{itemize}
+
+Observamos que si bien todos los medios de comunicación pueden cumplir los requerimientos de ancho de banda necesarios para un sistema de medición de EEG básico, solo el Wifi es capaz de suplir cualquier tipo de aplicación que se pueda presentar en EEG. Además, el ancho de banda restante es mas que suficiente para poder añadir datos de interés como la impedancia de cada canal, utilizar protocolos mas flexibles y seguros, inclusive agregar información de otros sensores periféricos que puedan servir de interés como termómetros, acelerómetros o inclusive agregar canales extras para medir otro tipo de bioseñales.
+
+\subsubsection{Estructura del Servidor}
+\label{sec:orgaa2db8b}
+Para podernos comunicar adecuadamente debemos establecer cual será la arquitectura del servidor. Podemos crear puentes seriales, clientes y servidores, publicadores y subscriptores. Todos los casos son validos y dependen a veces del hardware disponible o a veces del entorno y el tipo de procesamiento que se va a realizar. De una manera básica el servidor debe poder recibir información, procesarla, mostrarla y guardarla. Para ello existen varios esquemas genéricos. El primero y mas tradicional es una estructura Pedido/Respuesta. El segundo es mas moderno y propio del IOT, es una estructura Publicador/Subscriptor.
+
+\subsubsection{Formatos de Información}
+\label{sec:org007bf2c}
+Para transmitir información entre los microcontroladores y un software se debe seguir algún estándar o estructura de información. Podemos implementar estructuras reducidas encapsuladas en protocolos de comunicación como el TCP. De este modo podemos mandar variables, datos completos encapsulados en protocolos de comunicación que se encargan de generar esta estructura. Sin embargo nuestro software debe entender el orden en que esta información esta siendo enviada. Para simplificar las cosas, se pueden convertir los mensajes en objetos JSON que nos permiten una estructura simple de mandar objetos en cadenas de texto. Esto nos brinda una estructura fuerte y resiliente ya que es muy poco probable que pierda su forma y estructura en la comunicacional ser simples cadenas de texto que cualquier protocolo de comunicación esta diseñado para tolerar. Finalmente en el software convertir esta cadena de texto en variables e información utilizable se ha vuelto una tarea trivial con las librerías disponibles actualmente.
+
+\subsection{Procesamiento}
+\label{sec:org9e9eb93}
+El procesamiento se debe realizar por medio de algoritmos en algún lenguaje de programación. Existen infinidad de acercamientos dentro de los cuales se puede apreciar la prominencia de MatLab, Python y JavaScript para el procesamiento de datos y visualización. Lo cierto es que en la mayoría de los lenguajes existen librerías con funciones que nos permiten realizar un procesamiento de señal discreta de una manera muy sencilla.
+
+\subsubsection{TickStack}
+\label{sec:org37536b3}
+El Tick Stack es un termino utilizado por Influx Data, creadores del mismo. Se refiere a la utilización de sus 4 programas en un sistema reconfigurable; Telegraf, InfluxDB, Chronograph y Kapacitor. InfluxDB, el componente mas importante, es una base de datos en Series de Tiempo. A diferencia de una base de datos relacional SQL y una no relacional como MongoDB; las bases de datos de series de tiempo, son diseñadas específicamente para almacenar datos relacionados a una marca de tiempo. Esto permite una capacidad mayor en la velocidad de escritura de datos, así como en el volumen por segundo de escrituras y lecturas. La versión 2 de InfluxDB tiene integrado a Chronograph y Kapacitor como interfaz de usuario para la base de datos.
+
+Finalmente, Telegraf es una interfaz entre la base de datos y el mundo exterior basada en plugins. Esto presenta una gran flexibilidad ya que permite múltiples conexiones con el microcontrolador como websockets, redes MQTT, puertos seriales entre otros así como transferirlos a programas intermediarios que pre-procesen o acondicionen los datos antes de guardarlos en la base de datos o en varias bases de datos a la vez.
+
+El Tick Stack a veces se denomina TIG stack cuando se remplaza a Chronograph y Kapacitor por un programa tercero de interfaz como Graphana. El Tick Stack es muy flexible y abierto a cambios por lo que lo hace un candidato muy potente para centralizar el procesamiento de información. Así, si el usuario lo prefiere puede implementar distintas capas de procesamiento en el lenguaje que desee manteniendo una estructura universal.
+
+\subsubsection{Docker}
+\label{sec:org8c78c38}
+Docker es una herramienta que permite impulsar cualquier implementación de software a alcanzar una compatibilidad y resiliencia a través del tiempo máxima. Esto lo logra a través de la contenedorización. Este es un método propio muy similar al proceso de generar imágenes de máquinas virtuales e instanciarlas. Solo que en vez de generar una imagen de todo el sistema operativo, se crea una imagen muy reducida instalando en el sistema operativo únicamente los componentes que necesita el software instalado en el mismo. Es decir, es una máquina virtual optimizada para correr únicamente un conjunto definido de aplicaciones. Dicha optimización permite lograr la generación de imágenes extremadamente pequeñas en tamaño de disco así como en optimización de procesador.
+
+En su contraparte observamos que en efecto se crea una capa más de carga sobre la memoria y procesador. Pero la gran ventaja es que esto nos permite compartir la misma imagen en cualquier sistema operativo, en cualquier computador que cuente con la misma arquitectura de procesador base (Arm, x86, etc.). Docker es quien se encargará de traducir las instrucciones del driver con el sistema operativo del host. Esto elimina la necesidad de drivers específicos por sistema operativo así como fallas plausibles en la instalación de un software o por actualizaciones en el sistema.
+
+\subsubsection{Progressive Web Apps}
+\label{sec:orgd9437a6}
+Esta tecnología emergente promete ser el futuro de las aplicaciones móviles compitiendo con las aplicaciones nativas e hibridas. Las ventajas que presentan las Web Apps sobre las aplicaciones nativas se centran en la compatibilidad interplataforma que permite una reducción muy grande de costos. Se centran en el auge del HTML5-JavaScript que nos permite generar aplicaciones con funcionalidades similares a las aplicaciones nativas. Las Progressive Web Apps o PWA, prometen la misma potencia de funcionalidades con un esquema que permite descargar ciertos contenidos en los dispositivos que permitan su funcionamiento off line.
+
+Como ventajas sobre las aplicaciones nativas es que sin sacrificar mucho el rendimiento, se mejora el tamaño de la aplicación en el dispositivo así como se simplifica el tiempo de instalación. Finalmente estas triunfan sobre las aplicaciones nativas ya que cada vez que estas tienen acceso a internet, podrán actualizar automáticamente su código sin necesidad de ser instalado. En resumen, las PWA permiten alcanzar funcionalidades muy similares a las aplicaciones nativas e hibridas mientras se mantiene la alta compatibilidad entre plataformas compartida solo con las aplicaciones híbridas. Finalmente esta es vencedora en la carga de memoria, instalación y actualización.
+
+\subsubsection{Apis}
+\label{sec:org5637dd1}
+En casos de que sea necesario trabajar con softwares de terceros como el NeuromoreStudio y el OpenBCI Gui, existe documentación de Apis. Las APIs son las puertas que las aplicaciones abren para poder crean vínculos y expansibilidad de funciones sin tener que publicar el código fuente. En sí, son funcionalidades implementadas en aplicaciones que nos indican como interactuar con el mismo programa a un nivel mas profundo y programático. Esto es especialmente útil para poder utilizar softwares externos con dispositivos que previamente no tenían soporte disponible.
+
+\section{Bibliografía}
+\label{sec:orgfff7069}
+[1] T. T. Vo, N. P. Nguyen, and T. Vo Van, “WEEGEE: Wireless 8-channel EEG recording device,” IFMBE Proc., vol. 63, pp. 621–625, 2018.
+[2] IFCN, “IFCN standards for digital recording of clinical EEG. The International Federation of Clinical Neurophysiology.,” Electroencephalogr. Clin. Neurophysiol. Suppl., vol. 52, pp. 11–4, 1999.
+[3] B. B. Winter and B. B. Winter, “Driven-Right-Leg Circuit Design,” IEEE Trans. Biomed. Eng., vol. BME-30, no. 1, pp. 62–66, 1983.
+[4] V. Acharya, “Improving common-mode rejection using the right-leg drive amplifier.,” Texas Instruments, no. July, pp. 1–11, 2011.
+[5] S. Consul-Pacareu, R. Mahajan, M. J. Abu-Saude, and B. I. Morshed, “NeuroMonitor: a low-power, wireless, wearable EEG device with DRL-less AFE,” IET Circuits, Devices Syst., vol. 11, no. 5, pp. 471–477, 2017.
+[6] P. Tallgren, S. Vanhatalo, K. Kaila, and J. Voipio, “Evaluation of commercially available electrodes and gels for recording of slow EEG potentials,” Clin. Neurophysiol., vol. 116, no. 4, pp. 799–806, 2005.
+\end{document}

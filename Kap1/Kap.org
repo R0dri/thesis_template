@@ -1,33 +1,38 @@
+#+OPTIONS: \n:t
 \chapter{Marco Referencial}
 
 * Introducción
-Las bioseñales son originadas por la actividad eléctrica generada por un ser viviente. Estas pueden ser impulsos eléctricos enviados a los músculos para contracción, así como los generados por las sinapsis del cerebro. Las señales más conocidas y estudiadas son: las provenientes del corazón (ECG[fn:1]), del movimiento intraocular (EOG[fn:2]), del movimiento muscular (EMG[fn:3]) y de la actividad cerebral (EEG[fn:4]).
+Las bio-señales son originadas por la actividad eléctrica generada por un ser viviente. Estas pueden ser impulsos eléctricos enviados a los músculos para contracción, así como los generados por las sinapsis del cerebro. Las señales más conocidas y estudiadas son: las provenientes del corazón (ECG[fn:1]), del movimiento intraocular (EOG[fn:2]), del movimiento muscular (EMG[fn:3]) y de la actividad cerebral (EEG[fn:4]).
 
-Estas señales[fn:6] pueden ser medidas por medio de electrodos colocados en la superficie de piel más cercana al origen del impulso eléctrico. Sin embargo, este método presenta grandes problemas con el ruido considerando que este, puede provenir de la carga electroestática que se encuentre sobre la piel o pelo en el área de contacto. Adicionalmente, se presentan muchos artefactos, señales que no están relacionadas a la señal de interés [6]; tanto de origen biológico como no biológico.
-asdf
+Estas señales pueden ser medidas por medio de electrodos colocados en la superficie de piel más cercana al origen del impulso eléctrico. Sin embargo, este método presenta grandes problemas con el ruido considerando que este, puede provenir de la carga electroestática que se encuentre sobre la piel o pelo en el área de contacto. Adicionalmente, se presentan muchos artefactos, señales que no están relacionadas a la señal de interés cite:I.R.KeckV.FischerC.G.Puntonet2011; tanto de origen biológico como no biológico.
 
-En las bioseñales, los artefactos presentes suelen ser de la misma o incluso mayor magnitud que la señal de interés. Una forma de evitar estas interferencias es emplear amplificadores diferenciales como parte del diseño electrónico del dispositivo de adquisición [17]. Pero además, en conjunto, se utiliza una cantidad de electrodos elevada para reducir los artefactos y colocarlos en disposiciones específicas según el caso de uso [8].
-Por otro lado, existen dos tipos de usuarios que emplean y manipulan dispositivos de adquisición de bioseñales o BAS[fn:5]:
+En las bio-señales, los artefactos presentes suelen ser de la misma o incluso mayor magnitud que la señal de interés. Una forma de evitar estas interferencias es emplear amplificadores diferenciales como parte del diseño electrónico del dispositivo de adquisición cite:Winter1983. Pero además, en conjunto, se utiliza una cantidad de electrodos elevada para reducir los artefactos y colocarlos en disposiciones específicas según el caso de uso cite:Jurcak2007.
 
-+ Investigadores y desarrolladores de tecnologías. Estos emplean los dispositivos BAS para crear interfaces con computadores que asocian patrones en las bioseñales con intenciones del usuario. Cada asociación puede servir como un canal de entrada para la interfaz. Generalmente se realiza el uso de EEG para crear una BCI[fn:6] Interfaz Cerebro-Computador. En esta aplicación, pueden haber asociaciones de actividades cerebrales con intenciones creando múltiples canales de entrada para la interfaz desarrollada. Por ejemplo, un sistema BCI puede reconocer actividad cerebral motora (MI - Motor Imagery) de la mano izquierda y derecha [4]; de este modo, se pueden asociar estas dos actividades como dos entradas para una interfaz.
+Por otro lado, existen dos tipos de usuarios que emplean y manipulan dispositivos de adquisición de bio-señales o BAS[fn:5]:
 
-+ Practicantes de ciencias como la medicina y psicología para el diagnóstico, rehabilitación, monitoreo; así como estudio de la naturaleza y comportamiento de las señales. En el caso de la medicina, puede ser crítico en algunos casos. Un ejemplo es el monitoreo de la presencia de actividad cerebral en pacientes en coma [14]. En otros casos puede ser utilizados en estudios de polisomnografía para diagnosticar enfermedades o trastornos en el sueño.
++ Investigadores y desarrolladores de tecnologías. Estos emplean los dispositivos BAS para crear interfaces con computadores que asocian patrones en las bio-señales con intenciones del usuario. Cada asociación puede servir como un canal de entrada para la interfaz. Generalmente se realiza el uso de EEG para crear una BCI[fn:6] Interfaz Cerebro-Computador. En esta aplicación, pueden haber asociaciones de actividades cerebrales con intenciones creando múltiples canales de entrada para la interfaz desarrollada. Por ejemplo, un sistema BCI puede reconocer actividad cerebral motora (MI - Motor Imagery) de la mano izquierda y derecha cite:Gandhi2014; de este modo, se pueden asociar estas dos actividades como dos entradas para una interfaz.
 
-Cabe mencionar que todos los casos de uso se ven afectados por la cantidad de canales disponibles para la medición de ondas cerebrales. Esto se debe a que en un evento, la actividad cerebral se propaga en múltiples direcciones desde su origen. Por lo que, a medida que mayor sea la cantidad de electrodos utilizados se podrá captar mejor el evento. Una evidencia de esto se presenta en los estudios de polisomnografía [2].
++ Practicantes de ciencias como la medicina y psicología para el diagnóstico, rehabilitación, monitoreo; así como estudio de la naturaleza y comportamiento de las señales. En el caso de la medicina, puede ser crítico en algunos casos. Un ejemplo es el monitoreo de la presencia de actividad cerebral en pacientes en coma cite:Tatum2016a. En otros casos puede ser utilizados en estudios de polisomnografía cite:Bubrick2014 para diagnosticar enfermedades o trastornos en el sueño.
+
+Cabe mencionar que todos los casos de uso se ven afectados por la cantidad de canales disponibles para la medición de ondas cerebrales. Esto se debe a que en un evento, la actividad cerebral se propaga en múltiples direcciones desde su origen. Por lo que, a medida que mayor sea la cantidad de electrodos utilizados se podrá captar de mejor manera el evento. Una evidencia de esto se presenta en los estudios de polisomnografía cite:Bubrick2014.
 
 * Planteamiento del Problema
-De todas las bioseñales, la EEG presenta las mayores dificultades ya que la magnitud de la señal que puede llegar a estar varios órdenes por debajo del ruido y también de los artefactos; esto indica que la relación SNR[fn:7] señal-ruido en condiciones normales es la más baja entre las bioseñales. Por este motivo acompañado de la gran similitud entre las bioseñales, un dispositivo que sea capaz de medir una señal EEG es capaz de medir las otras mencionadas anteriormente [1]. Podemos observar cómo esto es posible si nos enfocamos en tres características de cualquier señal: frecuencia, magnitud y SNR.
+De todas las bio-señales, la EEG presenta las mayores dificultades ya que la magnitud de esta señal puede llegar a estar varios órdenes por debajo de la del ruido y otros artefactos; esto indica que la relación SNR[fn:7] en condiciones normales es la más baja entre las bio-señales. Por ello es inevitable una implementación de circuitos analógicos.
 
-Debido a la naturaleza analógica y el diseño in-expansible, los dispositivos cuentan con muchas limitaciones en cuanto a potenciación si no se elimina al financiamiento como un factor determinante. Como efecto, dificulta la generación de variantes más económicas que se ajusten a distintos tipos de aplicación.
+A pesar de que las bio-señales son muy similares y, teóricamente se pueden desarrollar dispositivos compatibles inter-señales; solo los dispositivos más especializados cuentan con estas características.
 
-Finalmente, en el lado del software, los dispositivos comerciales suelen brindar actualizaciones de firmware que puedan optimizar el funcionamiento a través de filtros digitales así como otros algoritmos de manejo de datos. Este procedimiento de actualización es trivial y no presentan mayores complicaciones debido a que las versiones suelen ser estables, permitiendo obviar las actualizaciones sin causar mayores complicaciones. Sin embargo, los distintos dispositivos cuentan con distintos software propietarios causando una gran incompatibilidad entre los dispositivos. Existen software como EEGLAB y BCILAB [22] que son compatibles con algunos de los dispositivos de medición de bioseñales EEG, sin embargo están programados sobre intermediarios como MATLAB. Otros como el OpenBCI [21] y OpenVibe [25] permiten compatibilidad con lenguajes y tecnologías más modernas; pero la compatibilidad se mantiene muy limitada ya que requiere que el usuario programe.
+Circuito analógico -> complejo -> caro
+Reducir costo -> cerrado -> poca competencia, poca potencia
+El circuito analógico es complejo y utiliza componentes caros para un buen desempeño. Esto eleva el costo de fabricación. No se puede optimizar los costos para un proyecto específico ya que los diseños son cerrados, in-expansibles con adaptabilidad muy baja. Parte de esto es por la complejidad del diseño y parte por el costo de oportunidad agregado. (es muy difícil vender un producto) Para reducir costos generalmente se sacrifica: la adaptabilidad, pues es mas laborioso en diseño y soporte; la potencia, se pueden utilizar componentes antiguos, baja calidad o rendimiento; y la facilidad de uso, igual que la adaptabilidad es mas laborioso.
+
+Finalmente, el software de los dispositivos comerciales suelen brindar actualizaciones de firmware que puedan optimizar el funcionamiento a través de filtros digitales así como otros algoritmos de manejo de datos. Este procedimiento de actualización es trivial y no presentan mayores complicaciones debido a que las versiones suelen ser estables; Sin embargo, es muy difícil asegurar que el proveedor va a seguir desarrollando actualizaciones necesarias. Además, los distintos dispositivos cuentan con distintos softwares propietarios causando una gran incompatibilidad entre los dispositivos. Existen softwares como EEGLAB y BCILAB [22] que son compatibles con solo algunos de los dispositivos de medición de bio-señales EEG qué, en su desmedro, están programados sobre intermediarios como MATLAB. Ortos como el OpenBCI [21] y OpenVibe [25] facilitan una compatibilidad mayor, brindando acceso a tecnologías más modernas; pero esta compatibilidad se mantiene escondida ya que requiere que el usuario programe.
 
 ** Definición del problema
-Actualmente hay baja disponibilidad en el mercado de dispositivos para la medición de multiples bioseñales que además sean asequibles para investigadores independientes. Asimismo es baja la variedad en los proyectos Open Source relacionados. Esto supone una brecha en el conocimiento e investigación de la neurociencia ya que hay un costo elevado para la inmersión en ésta práctica.
+Actualmente hay baja disponibilidad en el mercado de dispositivos para la medición de múltiples bio-señales que además sean asequibles para investigadores independientes. Asimismo es igual de baja la variedad en los proyectos Open Source relacionados. Esto supone una brecha de conocimiento e investigación en la neurociencia ya que hay un costo bien elevado para la inmersión en ésta práctica.
 
 * Objetivos
 ** Objetivo General
-Implementar un sistema modular que permita medir y grabar digitalmente bioseñales EEG.
+Implementar un sistema modular que permita medir y grabar digitalmente bio-señales EEG.
 
 ** Objetivos específicos
 - Desarrollar un sistema para la medición digital 2 canales simultáneos e independientes de señales EEG.
@@ -40,13 +45,13 @@ Implementar un sistema modular que permita medir y grabar digitalmente bioseñal
 - Implementar un sistema de comunicación de datos a través de WiFi.
 
 * Justificación
-El proyecto se ve entonces justificado con motivo de reducir la brecha de conocimiento al proveer de una alternativa mas flexible en el aspecto económico limitando más adecuadamente el sacrificio en el desempeño. En un punto de vista conceptual brindará un formato mas sencillo y práctico para entender los conceptos de la electroencefalografía y neurociencia. En el área técnica, se genera un diseño simple de reproducir beneficiando a las aplicaciones vecinas que puedan aprovechar sus fortalezas. Del punto de vista académico el aporte es interdisciplinario, uniendo conceptos de sistemas informáticos como el ser redes de comunicación y bases de datos con sistemas de computación embebidos. Asimismo, se le suma el diseño de un dispositivo de adquisición de señales analógicas a digitales con una precisión y robustez muy elevada.
+El proyecto se ve entonces justificado con motivo de reducir la brecha de conocimiento al proveer de una alternativa mas flexible en el aspecto económico, limitando selectivamente el sacrificio en desempeño (evitando la doble inversion a futuro). En un punto de vista conceptual, brindará un formato mas sencillo y práctico para entender los conceptos de la electroencefalografía y neurociencia. En el área técnica, se genera un diseño simple de reproducir, beneficiando a las aplicaciones vecinas que puedan aprovechar de sus fortalezas. Del punto de vista académico el aporte es interdisciplinario uniendo conceptos de sistemas informáticos, redes de comunicación y bases de datos con sistemas de computación embebidos. Asimismo se le suma, el diseño de un dispositivo digital de adquisición de señales analógicas genéricas con una precisión y robustez muy elevada.
 
 * Límites y Alcances
 ** Límites
 - Publicar el código con las instrucciones reservadas únicamente para la implementación en MacOS Catalina.
-- Cumplimiento de requerimientos estrictamente referentes la calibración en el subtitulo 3 y la grabación en los subtítulos 4 y 5 puestos por la IFCN para la medición clínica digital de EEG [7].
-- Comprobar si el sistema puede soportar hasta 24 canales desde un enfoque teórico.
+- Cumplimiento de requerimientos estrictamente referentes la calibración en el subtitulo 3 y la grabación en los subtítulos 4 y 5 puestos por la IFCN para la medición clínica digital de EEG cite:IFCN1999a.
+- Comprobar s
 - Implementar únicamente los módulos necesarios para cumplir los requerimientos mencionados para la medición clínica digital de señales EEG.
 - Manufacturar una copia única de cada módulo.
 - Código desarrollado solo para el micro-controlador ESP32 en Arduino.
@@ -59,14 +64,6 @@ El proyecto se ve entonces justificado con motivo de reducir la brecha de conoci
 - El sistema debe contar con protección de descargas electroestáticas (ESD) sobre el circuito.
 - El sistema debe contar con protección desde la fuente de alimentación; esta debe ser al menos de 1kV por 1s a través de un aislamiento galvánico y como alternativa el funcionamiento independiente a base de baterías.
  
-* export_latex
-#+BEGIN_SRC LaTeX
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "../TesisMSc"
-%%% End:
-#+END_SRC  
-
 * Footnotes
 [fn:7] SNR, por sus siglas en inglés: Signal to Noise Ratio 
 

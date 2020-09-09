@@ -10,15 +10,15 @@
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (LaTeX-add-labels
-    "sec:org98547cb"
-    "sec:orgc4ef7c7"
-    "sec:org1a85cbe"
-    "sec:org6187154"
-    "sec:org9a816cc"
-    "sec:org028bac8"
-    "sec:org022f3ff"
-    "sec:org961e8ef"
-    "sec:org2a09f43"
-    "sec:org0e29ab3"))
+    "sec:org220dcc6"
+    "sec:orgf77cb8f"
+    "sec:orgd89525e"
+    "sec:orge9abfe6"
+    "sec:org82460ed"
+    "sec:org5227f2c"
+    "sec:orgf60b767"
+    "sec:orgb1b8d20"
+    "sec:orgfecb326"
+    "sec:org53dcaf1"))
  :latex)
 
