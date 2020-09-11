@@ -1,4 +1,5 @@
 \chapter{Marco Teórico}
+#+OPTIONS:  \n:t
 
 * Estado del Arte
 =La electroencefalografía (EEG) es un estudio que se basa en la interpretación de los impulsos eléctricos producidos por las neuronas.=
@@ -418,8 +419,3 @@ En casos de que sea necesario trabajar con softwares de terceros como el Neuromo
 [fn:2] DRL, por sus siglas en inglés: /Driven Right Leg/
 
 [fn:1] EMI, por sus siglas en inglés: /Electro Magnetic Interferences/
-
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "../TesisMSc"
-%%% End:
