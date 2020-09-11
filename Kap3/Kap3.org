@@ -1,84 +1,181 @@
-\chapter{Marco Pr\'actico}
-Texto introductorio de lo que se desarollar\'a en este cap\'itulo.\\
+\chapter{Marco Práctico}
+#+OPTIONS:  \n:t
 
-\section{Esquema general del proyecto}
-Existen algunos ejemplos para la citaci\'{o}n bibliogr\'{a}fica, por ejemplo, Microsoft Word (versiones posteriores al 2006), en el  men\'{u} de referencias, se cuenta con la opci\'{o}n de insertar citas bibliogr\'{a}ficas utilizando la norma APA (American Psychological Association) u otras normas y con la ayuda para construir autom\'{a}ticamente la lista al final del documento. De la misma manera, existen administradores bibliogr\'{a}ficos compatibles con Microsoft Word como Zotero, End Note y el Reference Manager,  disponibles a trav\'{e}s del Sistema Nacional de Bibliotecas (SINAB) de la Universidad Nacional de Colombia\footnote{Ver:www.sinab.unal.edu.co } secci\'{o}n "Recursos bibliogr\'{a}ficos" opci\'{o}n "Herramientas Bibliogr\'{a}ficas. A continuaci\'{o}n se muestra un ejemplo de una de las formas m\'{a}s usadas para las citaciones bibliogr\'{a}ficas.\\
+* Esquema general del proyecto
+  
+El objetivo principal de este proyecto es la medición y grabación de señales EEG digitalmente. En esta sección del documento se detallará el proceso llevado acabo para el desarrollo de un prototipo funcional capaz de satisfacer todos los objetivos propuestos. Para la realización de un prototipo funcional se debe considerar las recomendaciones de la IFCN; alcanzar una resolución de la señal hasta 0.5µV con un rechazo de nodo común de 110dB y el ruido adicional debe ser menor de 1.5 µVpp y 0.5 µV raíz media cuadrada a cualquier frecuencia.
 
-Citaci\'{o}n individual:\cite{AG01}.\\
-Citaci\'{o}n simult\'{a}nea de varios autores:
-\cite{AG12,AG52,AG70,AG08a,AG09a,AG36a,AG01i}.\\
+El camino más indicado, como se analizará más profundamente en los siguientes incisos, para aproximarse a estas recomendaciones es la implementación de un diseño en placa de circuito impreso con componentes de montaje superficial. Con fines de asegurar el correcto funcionamiento se realizará la implementación a través de un servicio de prototipado en planta industrial. Para ello, sin embargo, es imprescindible la simulación completa en la etapa de diseño.
 
-Por lo general, las referencias bibliogr\'{a}ficas correspondientes a los anteriores n\'{u}meros, se listan al final del documento en orden de aparici\'{o}n o en orden alfab\'{e}tico. Otras normas de citaci\'{o}n incluyen el apellido del autor y el a\~{n}o de la referencia, por ejemplo: 1) "...\'{e}nfasis en elementos ligados al \'{a}mbito ingenieril que se enfocan en el manejo de datos e informaci\'{o}n estructurada y que seg\'{u}n Kostoff (1997) ha atra\'{\i}do la atenci\'{o}n de investigadores dado el advenimiento de TIC...", 2) "...Dicha afirmaci\'{o}n coincide con los planteamientos de Snarch (1998), citado por Castellanos (2007), quien comenta que el manejo..." y 3) "...el futuro del sistema para argumentar los procesos de toma de decisiones y el desarrollo de ideas innovadoras (Nosella \textsl{et al}., 2008)...".\\
+Diseño-simulacion-prototipado-validacion DIAGRAMA
 
-\section{Etapa 1}
+1. Que antecedentes de diseño se va a utilizar
+   1. Analog Front End [32ch, IFCN]
+   2. OpenBCI ADC for EEG
+   3. Power Consumption and Security [ModularEEG, Proj wireless]
 
-
-Al realizarse la ingenier\'ia del proyecto, es com\'un que sea necesario incluir im\'agenes de evidencien el desarrollo del proyecto. 
-Las ilustraciones forman parte del contenido de los cap\'{\i}tulos. Se deben colocar en la misma p\'{a}gina en que se mencionan o en la siguiente (deben siempre mencionarse en el texto).\\
-
-\subsection{Requerimientos}
-
-Las llamadas para explicar alg\'{u}n aspecto de la informaci\'{o}n deben hacerse con nota al pie y su nota correspondiente\footnote{Las notas van como "notas al pie". Se utilizan para explicar, comentar o hacer referencia al texto de un documento, as\'{\i} como para introducir comentarios detallados y en ocasiones para citar fuentes de informaci\'{o}n (aunque para esta opci\'{o}n es mejor seguir en detalle las normas de citaci\'{o}n bibliogr\'{a}fica seleccionadas).}. La fuente documental se debe escribir al final de la ilustraci\'{o}n o figura con los elementos de la referencia (de acuerdo con las normas seleccionadas) y no como pie de p\'{a}gina. Un ejemplo para la presentaci\'{o}n y citaci\'{o}n de figuras, se presenta a continuaci\'{o}n (citaci\'{o}n directa):\\
-
-\subsection{C\'alculos/dimensionamiento}
-
-\subsection{Desarrollo }
-Por medio de las propiedades del fruto, seg\'{u}n el espesor del endocarpio, se hace una clasificaci\'{o}n de la palma de aceite en tres tipos: Dura, Ternera y Pisifera, que se ilustran en la Figura
-\ref{fig:Fruto}.\\
-\begin{figure}
-\centering%
-\includegraphics{Kap3/FrutoSp}%
-\caption{Tipos y partes del fruto de palma de aceite \cite{AG03p,AG04p}.} \label{fig:Fruto}
-\end{figure}
-
-\section{Etapa 2}
-Para la edici\'{o}n de tablas, cada columna debe llevar su t\'{\i}tulo; la primera palabra se debe escribir con may\'{u}scula inicial y preferiblemente sin abreviaturas. En las tablas y cuadros, los t\'{\i}tulos y datos se deben ubicar entre l\'{\i}neas horizontales y verticales cerradas (como se realiza en esta plantilla).\\
-
-\subsection{Requerimientos}
-
-
-\subsection{C\'alculos/dimensionamiento}
-
-\subsection{Desarrollo }
-La numeraci\'{o}n de las tablas se realiza de la misma manera que las figuras o ilustraciones, a lo largo de todo el texto. Deben llevar un t\'{\i}tulo breve, que concreta el contenido de la tabla; \'{e}ste se debe escribir en la parte superior de la misma. Para la presentaci\'{o}n de cuadros, se deben seguir las indicaciones dadas para las tablas.\\
-
-Un ejemplo para la presentaci\'{o}n y citaci\'{o}n de tablas (citaci\'{o}n indirecta), se presenta a continuaci\'{o}n:\\
-
-De esta participaci\'{o}n aproximadamente el 60 \% proviene de biomasa
-(Tabla \ref{EMundo1}).
-\begin{center}
-\begin{threeparttable}
-\centering%
-\caption{Participaci\'{o}n de las energ\'{\i}as renovables en el suministro
-total de energ\'{\i}a primaria \cite{AG02i}.}\label{EMundo1}
-\begin{tabular}{|l|c|c|}\hline
-&\multicolumn{2}{c|}{Participaci\'{o}n en el suministro de energ\'{\i}a primaria /\% (Mtoe)\;$\tnote{1}$}\\\cline{2-3}%
-\arr{Region}&Energ\'{\i}as renovables &Participaci\'{o}n de la biomasa\\\hline%
-Latinoam\'{e}rica&28,9 (140)&62,4 (87,4)\\\hline%
-\:Colombia&27,7 (7,6)&54,4 (4,1)\\\hline%
-Alemania&3,8 (13,2)&65,8 (8,7)\\\hline%
-Mundial&13,1 (1404,0)&79,4 (1114,8)\\\hline
-\end{tabular}
-\begin{tablenotes}
-\item[1] \footnotesize{1 kg oe=10000 kcal=41,868 MJ}
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-
-NOTA: en el caso en que el contenido de la tabla o cuadro sea muy extenso, se puede cambiar el tama\~{n}o de la letra, siempre y cuando \'{e}sta sea visible por el lector.\\
-
-\section{Etapa 3}
-\subsection{Requerimientos}
-\subsection{C\'alculos/dimensionamiento}
-
-\subsection{Desarrollo }
-
-\section{Herramientas}
-
-\subsection{Hardware}
-\subsection{Software}
-
-\section{Resultados y discusi\'on}
+2. Como optimizar el diseño para modularidad
+   1. Entrada Electrodos OpenBCI Compatible
+   2. AFE enhancement, OpenBCI Compatible
+   3. ADC - SPI - µC-/µP
+   4. Alimentación
 
 
 
+* Diseño
+** Requerimientos
+   1. Revisión de Documentos (IFCN)
+   | Value            | Consideraciones           | Descripción                  |
+   |------------------+---------------------------+------------------------------|
+   | >=24             | Preferible 32             | Número de Canales            |
+   | >=200Hz          | Múltiplo de 50 o 64       | Frecuencia de Muestreo       |
+   | >=70 Hz 12db/oct | Sample Rate (200 min)     | Anti-Aliasing LP Filtro      |
+   | ~0.16 Hz         | Higher Discouraged        | DC-Offset HP Filtro          |
+   | 50-50 Hz         | Available, not permanent  | Notch Filtro                 |
+   | >=12 bit         | 0.5µV Resolucion de señal | Resolucion ADC               |
+   | >=110dB          | Medido en la entrada      | CMRR                         |
+   | 1.5µVpp          | Incluyendo 50-60 Hz       | Ruido a cualquier frecuencia |
+** Cálculos / dimensionamiento
+   2. Selección de Topología y Arquitectura
+   | Value    |          | Topologia              | Descripción             |
+   |----------+----------+------------------------+-------------------------|
+   | 70 Hz    | 12dB/oct | MFB Butterworth        | Anti-Aliasing LP Filtro |
+   | 0.16 Hz  | 8dB/oct  | Sallen-Key Butterworth | DC-Offset HP Filtro     |
+   | 50-50 Hz |          | Digital                | Filtro Rechaza Banda    |
+   | 2.54     |          | Ganancia en INA        | Ganancia Total          |
+
+   2. Teorico 
+   | Value   | Topologia         | Descripción         |
+   |---------+-------------------+---------------------|
+   | 110dB   | MFB Butterworth   | CMRR                |
+   | 2.54    | Ganancia          | DC-Offset HP Filtro |
+   | 10µV    | PGA x10 ADC 24bit | Resoulción LSB      |
+   | 0.16-80 |                   | Banda a -20dB       |
+ 
+** Desarrollo
+*** AFE
+    1. que es afe
+    2. Diseño automatizado Analog wizard +anexos
+       1. Características LP 4stage
+       2. Características HP 4stage
+*** ADC
+    1) Que es ADC
+    2) Open BCI módulos
+    3) Ganglion Block diagram (circuito anexo)
+    4) ADS1299 Series
+    5) ADS129x Series
+    6) *Compatibilidad
+    7) Comparativa Circuito Open BCI vs TI ADS1299
+    8) Circuito Eagle (anexo)
+
+*** Diseño módulo de alimentación y Simulación térmica
+1. Copiar diseño PWR (Modular EEG, OpenBCI, Datasheet) y simulación termica
+**** Requerimientos
+   - Bateria y USB
+   - Voltage Rails
+   - Analyze Virtual GND
+   - Analisis consumo
+   | Componente | Consumo | Cant | Moudlo |
+   |------------+---------+------+--------|
+   |            |         |    1 | pwr    |
+   |            |         |      |        |
+   |            |         |      |        |
+**** Cálculos / dimensionamiento
+   1. Cálculo de requerimientos; expansibilidad y flexiblidad (bateria, linea)
+   2. Grafico extrapolación potencia vs. voltaje
+   3. corriente reguladores
+**** Desarrollo
+   1. Datasheet y Open Source
+   2. Diseño Modular EEG Bloques (circuito Anexo)
+   3. diseño modular Open BCI Bloques (circuito Anexo)
+   4. Circuito unificado (circuito anexo)
+   5. MEJ02
+
+* Simulación
+** LT Spice
+    1. Simulación LT Spice
+       1. Filtros PB-PA
+       2. INA
+       3. Bode
+       4. Señales Continuas (sq/sin/triang/eeg)
+    2. Circuito Eagle (anexo)
+    3. Open BCI circuito ESD+Filtro
+** Eagle
+    5. Modelado CAD
+       1. Diseño esquemático
+       2. Consolidación de Librería de componentes
+          1. Shcematic pinout
+          2. Board Packaging
+          3. Board Legends
+          4. 3D model
+       3. Diseño Board Modular
+       4. Leyendas
+** Fusion 360 - Thermal sim
+   1. Exportar Fusion 360
+   2. Simplificar diseño
+   3. Modelado materiales
+   4. Carga potencia
+   5. Resultados
+* Prototipado
+   1) Generación de BOM (anexo)
+   2) Cotización (anexo)
+   3) *resoulción de inconsistencias (anexo)
+   4) Panelización/Gerbers (anexo)
+      1) Vrails
+      2) Dimensions
+   5) Logística y Ensamblaje
+   6) Cableado
+* Software
+** Servidores
+- Custom Go Compilation
+- DockerFile
+** Firmware
+- Time Tag
+- Dual Core (async)
+* Func Gen
+* Pruebas
+** Requerimientos
+   - Objetivos Específicos
+** Cálculos / dimensionamiento
+** Desarrollo
+1. Pruebas
+   1. Lineas de Voltaje
+      1. precisión
+      2. estabilidad
+   2. Filtros características
+      1. Bode 
+      2. FFT
+      3. Señal Sintética Base.
+   3. ADC 
+      1. Comunicación SPI
+      2. Precisión voltaje de Referencia y PGA
+      3. 200Hz+ Sample rate test comparison with oscilloscope 
+   4. Software
+      1. MQTT Python Client Stress Test
+      2. Docker stability?
+      3. Data loss length thest
+
+* ***Enclosure?***
+* Herramientas
+** Hardware
+  200 Palabras máximo por cada herramienta.
+*** ESP 32
+*** USB Test Meter
+*** DScope
+*** Analizador de lógica
+*** Multimetro, Cautin, Cables Dupont
+** Software
+  200 Palabras maximo por cada herramienta.
+*** Analog Filter Wizard
+*** Eagle CAD
+*** LT SPICE
+*** Fusion 360
+*** SigRok/PulseView
+*** Docker
+*** Go
+*** Mosquitto
+*** MQTT On-Off IOS App
+*** EMACS arduino-cli (esptool)
+* Resultados y discusión
+
+* Análisis de Costos

@@ -124,44 +124,38 @@ Estos conversores análogo-digital (ADC) utilizan un método de sobre muestreo, 
 Una práctica común en aplicaciones menos sensibles, es la de utilizar multiplexores para observar múltiples señales con un mismo ADC y asi reducir costos. Pero, esto no es viable en esta aplicación ya que, de hacer esto, se generaría un desfase entre cada canal. Si bien existen algoritmos para extrapolar las señales y mitigar este efecto negativo, las mediciones de las señales EEG aún no se consideran como validas si tienen un desfase mayor a 25μs cite:IFCN1999a; la mitad del mínimo del desfase introducido por los multiplexores, >45μs. Por este motivo, hoy en día, se suele utiliza un único ADC por cada canal a medir. Los circuitos integrados (IC) que se utilizan pueden tener hasta 8 canales consistiendo de un ADC diferencial ΔΣ y un PGA por cada canal. Este es uno de los motivos por el cual los dispositivos de EEG aun tienen costos tan elevados si consideramos que el mínimo número de canales considerado como necesario para una medición EEG es de 25 cite:IFCN1999a.
 
 ** [#A] Tipos de electrodos
-En esta área existe un gran espectro de variantes las cuales se diferencian por forma, material, tipo de contacto e inclusive si tienen componentes activos en sus terminales. Existen dos diferencias primordiales: si son activos o pasivos; si son secos o húmedos.
-
-*** [#A] Húmedos/Secos
-La piel es la interfaz entre el electrodo y el cuerpo donde se producen las señales.
-
-En la superficie de la piel encotramos que existen varios componentes desde sudor, grasa y piel muerta entre otros. Estos componentes afectan directamente a la connección lo cual supone una degradación en la medicion de las señales.
-
-Por ello se pueden utilizar compuestos que mejoren la conductividad de la superficie de la piel, mejorando así la calidad de la señal y estabilidad de la misma.
-
-Sin embargo, el uso del gel no es siempre posible en algunas aplicaciónes donde la sesion sea muy larga, ya que este se evapora y la connección termina degradandose. Por esto, a veces es mejor calibrar el dispositvo sin la utilización de este compuesto.
-
-A estos se los llama electrodos secos.
+En esta área existe un amplio espectro de variantes que se diferencian por forma, material, tipo de contacto y si tienen o no componentes activos en sus terminales. Estos últimos dos se diferencian por:  si son secos o húmedos, si son activos o pasivos; respectivamente. A continuación se presenta una breve explicación de cada uno en orden inverso.
 
 *** [#A] Activos/Pasivos
-Esta es una de las primordiales diferencias en los electrodos.
+Sin duda una diferencia primordial que depende en gran parte si el equipo tiene soporte para este tipo de electrodo ya que los electrodos activos requieren conexiones adicionales.
 
-Debido a que el dispositivo de medición suele estar lejos del electrodo, el cable que los interconecta funge como antena captando ruido extra que induce en la señal.
+Debido a que el dispositivo de medición suele estar lejos del electrodo, el cable que los interconecta funge como antena captando ruido extra que induce en la señal. Para mitigar este ruido se puede coloca un seguidor o en algunos casos amplificador de señal justo encima del electrodo (Activo). De este modo se refuerza la señal para evitar perdidas y reducir el impacto del ruido EMI en los cables.
 
-Para mitigar este ruido, en algunos casos se coloca un seguidor de voltaje o en algunos casos amplificador de señal justo encima del electrodo (Activo). De este modo se refuerza la señal para evitar perdidas e interferencias en los cables.
+Implementar este sistema, aunque es de gran utilidad cite:Mathewson2017,Lopez-Gordo2014, no es esencial por lo cual muchos dispositivos conectan los electrodos directamente a los cables (Pasivo). De ambos, los electrodos activos muestran el mejor desempeño. No obstante, debido a la complejidad de su implementación su costo es elevado y su complejidad aumenta la probabilidad de deterioro y falla.
 
-Este diseño no es esencial por lo cual muchos dispositivos conectan los electrodos directamente a los cables (Pasivo).
+*** [#A] Húmedos/Secos
+La piel es la interfaz entre el electrodo y el lugar donde se producen las bio-señales. En la superficie de la piel encontramos varios elementos conductores y otros aislantes como sudor (agua salina), grasa y piel muerta entre otros. Estos componentes actúan de distintas maneras =~en la interfaz~ en consecuencia, la señal. cual supone una variación alta enb en la medicion de las señales.=
 
-De ambos, los electrodos activos muestran el mejor desempeño aun con electrodos secos. No obstante, debido a su costo y complejidad, su implementación es muy compleja.
+Por ello se pueden utilizar compuestos que mejoren la conductividad de la superficie de la piel, o al menos generen un ambiente con conductividad uniforme, mejorando así la calidad de la señal y estabilidad de la misma.
 
-*** [#A] Material
-El material mas utilizado es el plata / cloruro de plata (Ag/AgCl). No obstante, esta puede ser como un recubrimiento externo, o de composición interna. Existen varios tipos de electrodos disponibles de manera comercial con distitnos recubrimientos incluyendo oro, estaño, Ag/AgCl. Se ha demostrado que los electrodos de Ag/AgCl sinterado son la mejor alternativa por su respuesta eléctrica en ruido de baja frequencia, durabilidad y desgaste entre otros [6].
+Sin embargo, el uso del gel no es siempre posible en algunas aplicaciones tal como polisomnografía o estudios deportivos donde las sesiones sea muy larga y el gel se seque o la piel sude y remueva el gel. En estos casos puede ser mas conveniente el uso de electrodos secos. Aquí se ve nuevamente una de las fortalezas de los electrodos activos ya que estos pueden sopesar la carencia de un gel conductorcite:Lopez-Gordo2014.
 
 *** [#A] Forma
-A diferencia de las demás bioseñales, en la EEG existen tres variantes; planas, en copa, estilo peine. La forma a utilizar depende de el caso de uso específico asi como si son activos/pasivos o secos/húmedos.
+Mientras que en el resto de las bio-señales hay el uso casi único de electrodos planos o de disco, en la EEG existen tres variantes de electrodos; planas, copa, peine. La forma a utilizar depende si hay cabello, el método de sujeción de los electrodos, si son activos/pasivos o si son secos/húmedos.
 
 - Planas:
-Son los mas comunes entre todas las bioseñales, principalemente por su costo bajo en fabricación. No obstante no son los ideales para la electroencefalografía, donde el electrodo debe llegar al cuero cabelludo evitando el cabello del paciente. Por lo cual la colocación de dispositivos para EEG con este tipo de electrodos suele ser muy dificultosa en areas que hay cabello.
+Son los mas comunes entre todas las bio-señales, principalmente por su costo bajo en fabricación y su área de contacto superior. No obstante, no son los ideales para la electroencefalografía donde el electrodo debe llegar al cuero cabelludo evitando el cabello del paciente. Por lo cual la colocación de dispositivos para EEG con este tipo de electrodos suele ser muy dificultosa a no ser que el paciente no tenga cabello en la cabeza o los electrodos sean lo suficiente pequeños para colocarse entre las hebras de cabello.
+
+Éste tipo de electrodos también pueden ser en forma de copa para permitir la existencia de un pequeño deposito de gel que contrarreste la evaporación manteniendo el área húmeda una mayor cantidad de tiempo.
 
 - Copa
-Estas presentan similitudes en cuanto a la complejidad de colocación de las planas. Sin embargo, estas ofrecen un espacio que sirve como reserva para colocar el gel conductivo. En estos electrodos suele encontrarse una apertura redonda para poder agregar gel una vez puesto el electrodo. Esto es muy importante ya que el gel se va evaporando y consumiendo, ya que no se puede hacer un sello como en el caso de los electrodos diseñados para la piel.
+Estas presentan similitudes en cuanto a la complejidad de colocación de las planas. Sin embargo, estas ofrecen un espacio mayor de reserva de gel comparado al de los electrodos planos de disco. En estos electrodos suele encontrarse una apertura redonda en el medio para poder agregar gel una vez puesto el electrodo. Este tipo de electrodo es mucho mas común en electroencefalografía ya que permite una mejor conectividad por el deposito extra de gel que permee hasta el cuero cabelludo en caso de ser colocado sobre hebras de cabello.
 
 - Peine
-El mas sencillo de colocar. Permite mantener un contacto mas firme y sin esfuerzo, por lo tanto, mas resistente al movimiento. Sin embargo, este puede llegar a ser mas incomodo, ya que cuenta con puntas rígidas. Por ello se investiga el diseño de electrodos flexibles impresos en 3D con un recubrimiento de Ag/Cl. De este modo se logra mantener la comodidad asi como la facilidad de aplicación.
+El mas sencillo de colocar. Permite mantener un contacto mas firme y sin esfuerzo, por lo tanto, mas resistente al movimiento. Igualmente mejora la estabilidad de la conexión al asegurar un numero determinado de puntos de contacto que no serán interferidos por el cabello. Sin embargo, este puede llegar a ser considerablemente mas incomodo ya que cuenta con puntos de presión rígidos. Por ello se han realizado investigaciones en el diseño de electrodos flexibles impresos en 3D con un recubrimiento de Ag/Cl cite:Krachunov2016,Rohaizad2019. De este modo se logra mantener la comodidad así como la facilidad de aplicación.
+
+*** [#A] Material
+El material mas utilizado es la aleación plata / cloruro de plata (Ag/AgCl). No obstante, esta puede ser vista mas bien como un recubrimiento externo. Existen varios tipos de electrodos disponibles de manera comercial con distintos recubrimientos incluyendo oro, estaño, Ag/AgCl. Se ha demostrado que los electrodos de Ag/AgCl sinterado son la mejor alternativa por su respuesta eléctrica en ruido de baja frequencia, durabilidad y desgaste entre otros cite:Tallgren2005.
 
 ** [#C] Procesamiento Digital
 Las señales eléctricas del cerebro, obtenidas mediante diferentes tareas de procesamiento analógico descritas previamente, son datos que para convertirse en información relevante, debe ser procesada ya sea para amplificarla, incrementar la resolución, filtrar ruido o señales no deseada, etc. En resumen, se debe modificar y traducir la señal analógica en información digital, y esa es la tarea que nos ocupa en este capítulo.
